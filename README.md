@@ -1,6 +1,12 @@
 <h1 align="center">Design Angular Kit</h1>
 
 <p align="center">
+<H1> Attenzione: progetto appena clonato tramite fork per inizio lavori.</H1>
+<h1> NON UTILIZZARE !!!</h1>
+</p>
+
+
+<p align="center">
   <img src=".github/angular_design_kit.png" alt="angular-logo" width="120px" height="120px"/>
   <br>
   <i>Design Angular Kit è un toolkit basato su Bootstrap Italia 
