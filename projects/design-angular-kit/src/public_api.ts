@@ -126,6 +126,10 @@ export * from './lib/components/utils/language-switcher/language-switcher.compon
 
 // It25
 export * from './lib/components/it25/footer/footer.component';
+export * from './lib/components/it25/header/header.component';
+export * from './lib/components/it25/navbar/navbar.module';
+export * from './lib/components/it25/navbar/navbar-item/navbar-item.component';
+export * from './lib/components/it25/navbar/navbar/navbar.component';
 
 // Services
 export * from './lib/services/notification/notification.service';

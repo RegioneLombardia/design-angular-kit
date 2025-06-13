@@ -28,7 +28,7 @@ export class It25HeaderComponent implements AfterViewInit {
   //   @Input() slimTitle: string | undefined;
   //   @Input() slimTitleLink: string | undefined = '#';
 
-  @Input() loginStyle: 'none' | 'default' | 'Logged' = 'none';
+  @Input() loginStyle: 'none' | 'default' | 'logged' = 'none';
   @Input() menuStyle: 'none' | 'horizontal' | 'vertical' | 'sidebar' = 'horizontal';
 
   @Output() loginClick: EventEmitter<Event>;

@@ -12,7 +12,7 @@ export class It25FooterComponent {
   /** Acronimo dell'applicativo */
   @Input() public acronym?: string;
   /** Nome dell'applicativo */
-  @Input() public applicationName: string;
+  @Input() public applicationName: string | undefined;
   /**
    * Area per logo multipli
    * @default false
