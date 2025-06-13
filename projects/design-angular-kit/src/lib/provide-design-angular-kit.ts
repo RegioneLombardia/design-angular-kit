@@ -3,7 +3,7 @@ import { APP_INITIALIZER, EnvironmentProviders, importProvidersFrom, makeEnviron
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { loadFonts } from 'bootstrap-italia';
+import { loadFonts } from 'bootstrap-lombardia';
 import { DesignAngularKitConfig, IT_ASSET_BASE_PATH } from './interfaces/design-angular-kit-config';
 
 /**
@@ -11,7 +11,7 @@ import { DesignAngularKitConfig, IT_ASSET_BASE_PATH } from './interfaces/design-
  * @param config the DesignAngularKit config
  */
 export function provideDesignAngularKit(config?: DesignAngularKitConfig): EnvironmentProviders {
-  let assetBasePath = './bootstrap-italia';
+  let assetBasePath = './bootstrap-lombardia';
   if (config?.assetBasePath) {
     assetBasePath = config.assetBasePath.endsWith('/')
       ? config.assetBasePath.substring(0, config.assetBasePath.lastIndexOf('/'))
@@ -28,7 +28,7 @@ export function provideDesignAngularKit(config?: DesignAngularKitConfig): Enviro
   ];
 
   if (config?.loadFont !== false) {
-    // Add provider to initialize the bootstrap-italia font
+    // Add provider to initialize the bootstrap-lombardia font
     providers.push({
       provide: APP_INITIALIZER,
       useFactory: () => {

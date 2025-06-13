@@ -20,7 +20,7 @@ export const tb_base = {
     importProvidersFrom(TranslateModule.forRoot()),
     {
       provide: IT_ASSET_BASE_PATH,
-      useValue: './bootstrap-italia',
+      useValue: './bootstrap-lombardia',
     },
   ],
 };

@@ -15,7 +15,7 @@ import {
 import { ItAbstractComponent } from '../../../../abstracts/abstract.component';
 import { ButtonColor, DropdownDirection } from '../../../../interfaces/core';
 import { ItDropdownItemComponent } from '../dropdown-item/dropdown-item.component';
-import { Dropdown } from 'bootstrap-italia';
+import { Dropdown } from 'bootstrap-lombardia';
 import { ItIconComponent } from '../../../utils/icon/icon.component';
 import { NgTemplateOutlet } from '@angular/common';
 import { inputToBoolean } from '../../../../utils/coercion';

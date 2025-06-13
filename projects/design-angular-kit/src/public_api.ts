@@ -124,6 +124,9 @@ export * from './lib/components/utils/error-page/error-page.component';
 export * from './lib/components/utils/icon/icon.component';
 export * from './lib/components/utils/language-switcher/language-switcher.component';
 
+// It25
+export * from './lib/components/it25/footer/footer.component';
+
 // Services
 export * from './lib/services/notification/notification.service';
 

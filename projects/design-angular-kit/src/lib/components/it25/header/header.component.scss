@@ -1,0 +1,11 @@
+.it-header-navbar-wrapper {
+  &.theme-light-desk {
+    &.it25-menu-orizzontale {
+      top: 28%;
+      margin-top: 0;
+      @media screen and (max-width: 991px) {
+        background: transparent;
+      }
+    }
+  }
+}

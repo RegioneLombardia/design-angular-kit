@@ -1,0 +1,12 @@
+<h1 class="bd-title">Footer</h1>
+<p class="bd-lead">Footer per il fondo pagina</p>
+<div [innerHTML]="footerComponent.description"></div>
+<it-tab-container>
+  <it-tab-item label="Esempi" active="true" class="mt-3">
+    <it-footer-examples></it-footer-examples>
+  </it-tab-item>
+  <it-tab-item label="API" class="mt-3">
+    <h2>Footer</h2>
+    <it-api-parameters [component]="footerComponent"></it-api-parameters>
+  </it-tab-item>
+</it-tab-container>

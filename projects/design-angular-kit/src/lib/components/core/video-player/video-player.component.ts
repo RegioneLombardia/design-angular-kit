@@ -49,7 +49,7 @@ enum ViewType {
           <div #acceptOveraly class="acceptoverlay acceptoverlay-primary fade show">
             <div class="acceptoverlay-inner">
               <div class="acceptoverlay-icon">
-                <svg class="icon icon-xl"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-video"></use></svg>
+                <svg class="icon icon-xl"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-video"></use></svg>
               </div>
               <p>
                 Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella
@@ -78,7 +78,7 @@ enum ViewType {
     }
     <ng-template #videoTemplate>
       <div>
-        <video #videoPlayer class="video-js vjs-theme-bootstrap-italia vjs-fluid vjs-big-play-centered"></video>
+        <video #videoPlayer class="video-js vjs-theme-bootstrap-lombardia vjs-fluid vjs-big-play-centered"></video>
       </div>
     </ng-template>
 

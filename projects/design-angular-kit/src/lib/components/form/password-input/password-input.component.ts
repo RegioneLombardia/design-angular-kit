@@ -2,7 +2,7 @@ import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, O
 import { ItAbstractFormComponent } from '../../../abstracts/abstract-form.component';
 import { ItValidators } from '../../../validators/it-validators';
 import { map, Observable } from 'rxjs';
-import { InputPassword } from 'bootstrap-italia';
+import { InputPassword } from 'bootstrap-lombardia';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { AsyncPipe } from '@angular/common';
 import { ItIconComponent } from '../../utils/icon/icon.component';

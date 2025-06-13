@@ -3,7 +3,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ItIconComponent } from '../../../utils/icon/icon.component';
 import { ItButtonDirective } from '../../../core/button/button.directive';
 import { inputToBoolean } from '../../../../utils/coercion';
-import { NavBarCollapsible } from 'bootstrap-italia';
+import { NavBarCollapsible } from 'bootstrap-lombardia';
 
 @Component({
   standalone: true,

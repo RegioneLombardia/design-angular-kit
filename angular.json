@@ -33,13 +33,13 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "./node_modules/bootstrap-italia/",
-                "output": "/bootstrap-italia/"
+                "input": "./node_modules/bootstrap-lombardia/",
+                "output": "/bootstrap-lombardia/"
               },
               {
                 "glob": "**/*",
                 "input": "./projects/design-angular-kit/assets/i18n",
-                "output": "/bootstrap-italia/i18n/"
+                "output": "/bootstrap-lombardia/i18n/"
               }
             ],
             "styles": [

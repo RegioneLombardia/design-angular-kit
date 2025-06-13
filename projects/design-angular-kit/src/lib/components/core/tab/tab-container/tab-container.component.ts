@@ -13,7 +13,7 @@ import {
 } from '@angular/core';
 import { ItTabItemComponent } from '../tab-item/tab-item.component';
 import { of, startWith, Subscription, switchMap, tap } from 'rxjs';
-import { Tab } from 'bootstrap-italia';
+import { Tab } from 'bootstrap-lombardia';
 import { ItAbstractComponent } from '../../../../abstracts/abstract.component';
 import { NgTemplateOutlet } from '@angular/common';
 import { ItIconComponent } from '../../../utils/icon/icon.component';

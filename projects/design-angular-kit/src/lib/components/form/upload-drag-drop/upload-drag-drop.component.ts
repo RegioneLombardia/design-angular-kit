@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 import { ItAbstractComponent } from '../../../abstracts/abstract.component';
 import { ItFileUtils } from '../../../utils/file-utils';
-import { ProgressDonut } from 'bootstrap-italia';
+import { ProgressDonut } from 'bootstrap-lombardia';
 import { ItIconComponent } from '../../utils/icon/icon.component';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';

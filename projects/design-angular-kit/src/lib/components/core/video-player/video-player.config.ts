@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { initYoutubePlugin } from 'bootstrap-italia/dist/plugins/util/youtube-video.js';
+import { initYoutubePlugin } from 'bootstrap-lombardia/dist/plugins/util/youtube-video.js';
 import videojs from 'video.js';
 import { VideoPlayerI18nService } from './video-player-i18n.service';
 import { ItEmbedVideoPlayerOptions, ItNativeVideoPlayerOptions, ItVideoPlayerOptions } from './video-player.model';

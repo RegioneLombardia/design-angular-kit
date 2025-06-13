@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { ItAbstractComponent } from '../../../abstracts/abstract.component';
-import { Collapse } from 'bootstrap-italia';
+import { Collapse } from 'bootstrap-lombardia';
 import { inputToBoolean } from '../../../utils/coercion';
 
 @Component({

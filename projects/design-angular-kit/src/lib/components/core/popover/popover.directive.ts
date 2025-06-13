@@ -1,6 +1,6 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 import { ElementPlacement } from '../../../interfaces/core';
-import { Popover } from 'bootstrap-italia';
+import { Popover } from 'bootstrap-lombardia';
 import { inputToBoolean } from '../../../utils/coercion';
 
 @Directive({

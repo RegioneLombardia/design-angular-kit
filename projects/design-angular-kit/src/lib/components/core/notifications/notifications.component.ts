@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy
 import { Subscription } from 'rxjs';
 import { ItNotificationService } from '../../../services/notification/notification.service';
 import { Notification, NotificationPosition, NotificationType } from '../../../interfaces/core';
-import { Notification as BSNotification } from 'bootstrap-italia';
+import { Notification as BSNotification } from 'bootstrap-lombardia';
 import { IconName } from '../../../interfaces/icon';
 import { ItIconComponent } from '../../utils/icon/icon.component';
 import { TranslateModule } from '@ngx-translate/core';

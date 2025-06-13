@@ -1,8 +1,18 @@
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+  OnInit,
+  AfterViewInit,
+} from '@angular/core';
 import { ItAbstractFormComponent } from '../../../abstracts/abstract-form.component';
 import { AsyncPipe } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SelectAutocomplete } from 'bootstrap-italia';
+import { SelectAutocomplete } from 'bootstrap-lombardia';
 
 type functionSource = (query: string, populateResults: (results: string[]) => void) => void;
 
@@ -13,7 +23,7 @@ type functionSource = (query: string, populateResults: (results: string[]) => vo
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [ReactiveFormsModule, AsyncPipe],
 })
-export class ItAutocompleteComponent extends ItAbstractFormComponent<string | null | undefined> {
+export class ItAutocompleteComponent extends ItAbstractFormComponent<string | null | undefined> implements OnInit, AfterViewInit {
   /**
    * Autocomplete elements.
    * @default []

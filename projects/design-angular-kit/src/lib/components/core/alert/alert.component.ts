@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { AlertColor } from '../../../interfaces/core';
 import { ItAbstractComponent } from '../../../abstracts/abstract.component';
-import { Alert } from 'bootstrap-italia';
+import { Alert } from 'bootstrap-lombardia';
 import { TranslateModule } from '@ngx-translate/core';
 import { ItIconComponent } from '../../utils/icon/icon.component';
 import { inputToBoolean } from '../../../utils/coercion';

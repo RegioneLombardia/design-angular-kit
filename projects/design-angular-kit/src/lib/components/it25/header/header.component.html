@@ -1,0 +1,84 @@
+<header #headerWrapper class="it-header-wrapper" data-bs-position-type="fixed" data-bs-target="#header-nav-wrapper">
+  @if (showSlim) {
+    <div class="it-header-slim-wrapper it25-top-bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-slim-wrapper-content">
+              <a class="navbar-brand" href="#">
+                <img src="bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+              </a>
+              <div class="it-header-slim-right-zone">
+                <ng-content select="[slimRightZone]"></ng-content>
+                @if (loginStyle === 'default') {
+                  <a class="btn btn-primary btn-sm btn-full" (click)="emitLoginClick($event)" href="#">
+                    <it-icon name="user" color="white"></it-icon>
+                    {{ 'it.navigation.login' | translate }}
+                  </a>
+                }
+                @if (loginStyle === 'logged') {
+                  <ng-content select="[userSettings]"></ng-content>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper it25-barra-ist" [class.it-small-header]="smallHeader">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <ng-content select="[brand]"></ng-content>
+              </div>
+              <div class="it-right-zone">
+                <ng-content select="[rightZone]"></ng-content>
+                @if (showSearch) {
+                  <form>
+                    <div class="it-search-wrapper">
+                      <input
+                        id="search-input99"
+                        class="form-control d-none d-lg-flex mr-sm-2 ml-auto"
+                        type="search"
+                        placeholder="Cerca..."
+                        aria-label="Testo per ricerca" />
+                      <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                        <svg class="icon"><use xlink:href="bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
+                      </button>
+                    </div>
+                  </form>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @if (menuStyle === 'horizontal') {
+      <div class="it-header-navbar-wrapper theme-light-desk it25-menu-orizzontale" id="header-nav-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <it25-navbar [megamenu]="megamenu" [expand]="expand" [horizontal]="true">
+                <ng-container navItems>
+                  <ng-content select="[navItems]"></ng-content>
+                </ng-container>
+              </it25-navbar>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  @if (menuStyle === 'vertical') {
+    <it25-navbar [megamenu]="megamenu" [expand]="expand" [vertical]="true">
+      <ng-container navItems>
+        <ng-content select="[verticalNavItems]"></ng-content>
+      </ng-container>
+    </it25-navbar>
+  }
+</header>

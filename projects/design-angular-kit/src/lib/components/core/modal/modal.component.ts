@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { ItAbstractComponent } from '../../../abstracts/abstract.component';
-import { Modal } from 'bootstrap-italia';
+import { Modal } from 'bootstrap-lombardia';
 import { TranslateModule } from '@ngx-translate/core';
 import { Modal as BSModal } from 'bootstrap';
 import { inputToBoolean } from '../../../utils/coercion';

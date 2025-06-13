@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { ItAbstractComponent } from '../../../abstracts/abstract.component';
-import { BackToTop } from 'bootstrap-italia';
+import { BackToTop } from 'bootstrap-lombardia';
 import { ItIconComponent } from '../../utils/icon/icon.component';
 import { inputToBoolean } from '../../../utils/coercion';
 

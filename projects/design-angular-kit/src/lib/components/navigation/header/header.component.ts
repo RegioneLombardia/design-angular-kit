@@ -17,7 +17,7 @@ import { ItNavBarComponent } from '../navbar/navbar/navbar.component';
 
 import { ItButtonDirective } from '../../core/button/button.directive';
 import { inputToBoolean } from '../../../utils/coercion';
-import { HeaderSticky } from 'bootstrap-italia';
+import { HeaderSticky } from 'bootstrap-lombardia';
 
 @Component({
   standalone: true,

@@ -45,6 +45,11 @@ import { DesignAngularKitConfig } from './interfaces/design-angular-kit-config';
 import { ItDateAgoPipe } from './pipes/date-ago.pipe';
 import { ItDurationPipe } from './pipes/duration.pipe';
 import { ItMarkMatchingTextPipe } from './pipes/mark-matching-text.pipe';
+/* IT25 */
+import { It25FooterComponent } from './components/it25/footer/footer.component';
+import { It25HeaderComponent } from './components/it25/header/header.component';
+import { It25NavBarModule } from './components/it25/navbar/navbar.module';
+/* */
 import { provideDesignAngularKit } from './provide-design-angular-kit';
 
 /**
@@ -82,6 +87,11 @@ const core = [
 ];
 
 /**
+ * IT25 Components
+ */
+const it25 = [It25FooterComponent, It25HeaderComponent, It25NavBarModule];
+
+/**
  * Navigation Components
  */
 const navigation = [
@@ -109,6 +119,7 @@ const pipes = [ItDateAgoPipe, ItDurationPipe, ItMarkMatchingTextPipe];
 
 const components = [
   ...core, // Core components
+  ...it25, // IT25 components
   ItFormModule, // Form components
   ...navigation, // Navigation Components
   ...utils, // Utils components

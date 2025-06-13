@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 import { CarouselType } from '../../../../interfaces/core';
 import { ItCarouselItemComponent } from '../carousel-item/carousel-item.component';
-import { Carousel } from 'bootstrap-italia';
+import { Carousel } from 'bootstrap-lombardia';
 import { startWith, Subscription } from 'rxjs';
 import { NgTemplateOutlet } from '@angular/common';
 import { inputToBoolean } from '../../../../utils/coercion';

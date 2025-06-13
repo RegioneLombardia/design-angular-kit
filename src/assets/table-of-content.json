@@ -8,6 +8,20 @@
       }]
     },
     {
+      "label": "Componenti Lombardia",
+      "link": "/it25",
+      "links": [
+        {
+          "label": "Header (WIP)",
+          "link": "/it25/header"
+        },
+        {
+          "label": "Footer",
+          "link": "/it25/footer"
+        }
+      ]
+    },
+    {
       "label": "Organizzare i contenuti",
       "link": "/organizzare-i-contenuti",
       "links": [

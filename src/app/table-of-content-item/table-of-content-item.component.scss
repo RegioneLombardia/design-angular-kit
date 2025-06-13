@@ -1,6 +1,9 @@
-@import 'bootstrap-italia/src/scss/base/functions';
-@import 'bootstrap-italia/src/scss/base/variables';
-@import 'bootstrap-italia/src/scss/base/mixins';
+@import 'bootstrap-lombardia/src/scss/base/functions';
+@import 'bootstrap-lombardia/src/scss/custom-lombardia/colors_vars';
+@import 'bootstrap-lombardia/src/scss/base/variables';
+@import 'bootstrap-lombardia/src/scss/custom-lombardia/colors_vars_patch';
+@import 'bootstrap-lombardia/src/scss/custom-lombardia/variables';
+@import 'bootstrap-lombardia/src/scss/base/mixins';
 
 .bd-links {
   padding: 0;
@@ -26,6 +29,7 @@
     padding-bottom: 0.25rem;
   }
   color: $gray-800;
+  text-decoration-line: none;
 
   &:hover {
     color: $primary;

@@ -1,0 +1,301 @@
+<h3>Componente Header</h3>
+<div class="bd-example">
+  <it25-header [loginStyle]="login" [menuStyle]="menu" [showSearch]="search" [megamenu]="true">
+    <ng-container slimRightZone>
+      <it-language-switcher mode="nav"></it-language-switcher>
+    </ng-container>
+    <ng-container userSettings>
+      <it-dropdown mode="nav">
+        <span button>
+          <svg class="icon icon-white"><use xlink:href="bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use></svg>
+          <strong>Utente/ruolo</strong>
+        </span>
+        <ng-container list>
+          <it-dropdown-item>Dati Profilo</it-dropdown-item>
+          <it-dropdown-item>Impostazioni</it-dropdown-item>
+          <it-dropdown-item>Disconnetti</it-dropdown-item>
+        </ng-container>
+      </it-dropdown>
+    </ng-container>
+    <ng-container brand>
+      <a href="#">
+        <img
+          src="bootstrap-lombardia/dist/assets/img/logo-rl.png"
+          alt="logo regione lombardia"
+          class="it25-header-logo d-none d-md-block" />
+        <div class="it-brand-text">ACRONIMO <span class="d-none d-lg-inline">Nome applicativo</span></div>
+      </a>
+    </ng-container>
+    <div class="d-none d-md-flex" rightZone></div>
+    <ng-container navItems>
+      <it25-navbar-item
+        ><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></it25-navbar-item
+      >
+      <it25-navbar-item
+        ><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></it25-navbar-item
+      >
+      <it25-navbar-item
+        ><a class="nav-link" href="#"><span>Link 3</span></a></it25-navbar-item
+      >
+      <it25-navbar-item
+        ><a class="nav-link" href="#"><span>Link 4</span></a></it25-navbar-item
+      >
+      <it25-navbar-item>
+        <it-dropdown mode="nav">
+          <span button>Menu dropdown</span>
+          <ng-container list>
+            <it-dropdown-item>Link lista 1</it-dropdown-item>
+            <it-dropdown-item>Link lista 2</it-dropdown-item>
+          </ng-container>
+        </it-dropdown>
+      </it25-navbar-item>
+      <it25-navbar-item>
+        <it-dropdown mode="nav" [megamenu]="true">
+          <span button>Megamenu</span>
+          <ng-container list>
+            <it-megamenu [mode]="'normal'">
+              <ng-container megamenuLinkList>
+                <div class="col-12 col-lg-4">
+                  <div class="link-list-heading text-primary">Heading 1</div>
+                  <it-list linkList="true">
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="link-list-heading text-primary">Heading 2</div>
+                  <it-list linkList="true">
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 4</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 5</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 6</span>
+                    </it-list-item>
+                  </it-list>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="link-list-heading text-primary">Heading 3</div>
+                  <it-list linkList="true">
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 7</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true" disabled="true">
+                      <span>Link lista 8</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span>Link lista 9</span>
+                    </it-list-item>
+                  </it-list>
+                </div>
+              </ng-container>
+            </it-megamenu>
+          </ng-container>
+        </it-dropdown>
+      </it25-navbar-item>
+    </ng-container>
+
+    <ng-container verticalNavItems>
+      <nav class="it25-vertical-menu" id="it25-main-nav">
+        <div class="sidebar-wrapper">
+          <div class="sidebar-linklist-wrapper">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li>
+                  <a
+                    class="list-item large medium right-icon"
+                    href="#collapseZero"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="collapseZero">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse" id="collapseZero">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="list-item large medium right-icon"
+                    href="#collapseUno"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="collapseUno">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse show" id="collapseUno">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="list-item large medium right-icon active"
+                    href="#collapseDue"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="collapseDue">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse show" id="collapseDue">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="list-item large medium right-icon"
+                    href="#collapseTre"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="collapseTre">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse show" id="collapseTre">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="list-item large medium right-icon"
+                    href="#collapseQuattro"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="collapseQuattro">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse show" id="collapseQuattro">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="list-item large medium right-icon"
+                    href="#collapseCinque"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="collapseCinque">
+                    <span class="list-item-title-icon-wrapper">
+                      <span class="fw-bold">Lorem ipsum dolor</span>
+                      <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                        <use href="bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="link-sublist collapse show" id="collapseCinque">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </ng-container>
+  </it25-header>
+  <div class="row">
+    <div class="form-check col-12 col-md-3">
+      <h5>Opzioni</h5>
+      <it-checkbox [(ngModel)]="search" label="Visualizza ricerca"></it-checkbox>
+    </div>
+    <div class="form-check col-12 col-md-3">
+      <h5>Tipologia di login</h5>
+      <it-radio-button name="default" [(ngModel)]="login" value="none" label="Nessuno"></it-radio-button>
+      <it-radio-button name="dropup" [(ngModel)]="login" value="default" label="Default"></it-radio-button>
+      <it-radio-button name="dropstart" [(ngModel)]="login" value="logged" label="Accesso effettuato"></it-radio-button>
+    </div>
+    <div class="form-check col-12 col-md-3">
+      <h5>Tipo di menù</h5>
+      <it-radio-button name="no-menu" [(ngModel)]="menu" value="none" label="Nessuno"></it-radio-button>
+      <it-radio-button name="hor-menu" [(ngModel)]="menu" value="horizontal" label="Orizzontale"></it-radio-button>
+      <it-radio-button name="vert-menu" [(ngModel)]="menu" value="vertical" label="Verticale"></it-radio-button>
+      <it-radio-button name="sidebar-menu" [(ngModel)]="menu" value="sidebar" label="Sidebar" disabled></it-radio-button>
+    </div>
+  </div>
+</div>

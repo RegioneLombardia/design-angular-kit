@@ -1,0 +1,30 @@
+.navbar {
+  &.horizontal {
+    padding-left: 8px !important;
+    padding-top: 6px;
+  }
+
+  &.vertical {
+    padding-left: 0;
+    padding-top: 0;
+    background-color: white;
+    button {
+      &.custom-navbar-toggler {
+        position: absolute;
+        top: -62px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+//@include media-breakpoint-up(lg) {
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-collapsable {
+      .menu-wrapper {
+        background-color: white;
+      }
+    }
+  }
+}

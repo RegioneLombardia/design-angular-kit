@@ -15,6 +15,15 @@ const routes: Routes = [
     ],
   },
   {
+    path: 'it25',
+    component: RouterDispatcherComponent,
+    children: [
+      { path: '', redirectTo: 'info', pathMatch: 'full' },
+      { path: 'header', loadChildren: () => import('src/app/it25/header/header.module').then(m => m.It25HeaderModule) },
+      { path: 'footer', loadChildren: () => import('src/app/it25/footer/footer.module').then(m => m.It25FooterModule) },
+    ],
+  },
+  {
     path: 'organizzare-i-contenuti',
     component: RouterDispatcherComponent,
     children: [
