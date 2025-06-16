@@ -1,3 +1,9 @@
+# 1.0.0-alpha (2025-06-16)
+
+Prima pre-release
+
+
+
 # [1.4.0](https://github.com/italia/design-angular-kit/compare/v1.3.2...v1.4.0) (2025-05-26)
 
 

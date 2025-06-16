@@ -1,7 +1,7 @@
 {
   "name": "design-angular-kit-lombardia",
   "description": "Un toolkit Angular conforme alle linee guida di design per i servizi web della Regione Lombardia",
-  "version": "1.4.0",
+  "version": "1.0.0-alpha",
   "license": "BSD-3-Clause",
   "keywords": [
     "angular",
