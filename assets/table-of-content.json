@@ -1,0 +1,254 @@
+{
+  "tableOfContent": [{
+      "label": "Informazioni",
+      "link": "/info",
+      "links": [{
+        "label": "Benvenuti",
+        "link": "/info/welcome"
+      }]
+    },
+    {
+      "label": "Componenti Lombardia",
+      "link": "/it25",
+      "links": [
+        {
+          "label": "Header (WIP)",
+          "link": "/it25/header"
+        },
+        {
+          "label": "Footer",
+          "link": "/it25/footer"
+        }
+      ]
+    },
+    {
+      "label": "Organizzare i contenuti",
+      "link": "/organizzare-i-contenuti",
+      "links": [
+        {
+          "label": "Lists",
+          "link": "/organizzare-i-contenuti/list"
+        },
+        {
+          "label": "Table",
+          "link": "/organizzare-i-contenuti/table"
+        }
+      ]
+    },
+    {
+      "label": "Menu di navigazione",
+      "link": "/menu-di-navigazione",
+      "links": [
+        {
+          "label": "Back To Top",
+          "link": "/menu-di-navigazione/back-to-top"
+        },
+        {
+          "label": "Breadcrumb",
+          "link": "/menu-di-navigazione/breadcrumb"
+        },
+        {
+          "label": "Header",
+          "link": "/menu-di-navigazione/header"
+        },
+        {
+          "label": "Footer",
+          "link": "/menu-di-navigazione/footer"
+        },
+        {
+          "label": "Back Button",
+          "link": "/menu-di-navigazione/back-button"
+        },
+        {
+          "label": "Forward",
+          "link": "/menu-di-navigazione/forward"
+        },
+        {
+          "label": "Megamenu",
+          "link": "/menu-di-navigazione/megamenu"
+        },
+        {
+          "label": "Sidebar",
+          "link": "/menu-di-navigazione/sidebar"
+        },
+        {
+          "label": "Skiplink",
+          "link": "/menu-di-navigazione/skiplink"
+        },
+        {
+          "label": "Navscroll",
+          "link": "/menu-di-navigazione/navscroll"
+        }
+      ]
+    },
+    {
+      "label": "Form",
+      "link": "/form",
+      "links": [
+        {
+          "label": "Autocomplete",
+          "link": "/form/autocomplete"
+        },
+        {
+          "label": "Checkbox",
+          "link": "/form/checkbox"
+        },
+        {
+          "label": "Toggle",
+          "link": "/form/toggle"
+        },
+        {
+          "label": "Radio button",
+          "link": "/form/radio"
+        },
+        {
+          "label": "Form Input",
+          "link": "/form/form-input"
+        },
+        {
+          "label": "Upload",
+          "link": "/form/upload"
+        },
+        {
+          "label": "Search",
+          "link": "/form/search"
+        },
+        {
+          "label": "Select",
+          "link": "/form/select"
+        },
+        {
+          "label": "Transfer",
+          "link": "/form/transfer"
+        },
+        {
+          "label": "Textarea",
+          "link": "/form/textarea"
+        },
+        {
+          "label": "Password Input",
+          "link": "/form/password-input"
+        }
+      ]
+    },
+    {
+      "label": "Componenti",
+      "link": "/componenti",
+      "links": [
+        {
+          "label": "Accordion",
+          "link": "/componenti/accordion"
+        },
+        {
+          "label": "Avatar",
+          "link": "/componenti/avatar"
+        },
+        {
+          "label": "Progress Bar",
+          "link": "/componenti/progress-bar"
+        },
+
+        {
+          "label": "Popover",
+          "link": "/componenti/popover"
+        },
+        {
+          "label": "Tooltip",
+          "link": "/componenti/tooltip"
+        },
+        {
+          "label": "Button",
+          "link": "/componenti/button"
+        },
+        {
+          "label": "Badge",
+          "link": "/componenti/badge"
+        },
+        {
+          "label": "Dropdown",
+          "link": "/componenti/dropdown"
+        },
+        {
+          "label": "Tabs",
+          "link": "/componenti/tabs"
+        },
+        {
+          "label": "Collapse",
+          "link": "/componenti/collapse"
+        },
+        {
+          "label": "Card",
+          "link": "/componenti/card"
+        },
+        {
+          "label": "Chip",
+          "link": "/componenti/chip"
+        },
+        {
+          "label": "Dimmer",
+          "link": "/componenti/dimmer"
+        },
+        {
+          "label": "Callout",
+          "link": "/componenti/callout"
+        },
+        {
+          "label": "Steppers",
+          "link": "/componenti/steppers"
+        },
+        {
+          "label": "Notifications",
+          "link": "/componenti/notifications"
+        },
+        {
+          "label": "Rating",
+          "link": "/componenti/rating"
+        },
+        {
+          "label": "Pagination",
+          "link": "/componenti/pagination"
+        },
+        {
+          "label": "Alert",
+          "link": "/componenti/alert"
+        },
+        {
+          "label": "Spinner",
+          "link": "/componenti/spinner"
+        },
+        {
+          "label": "Icons",
+          "link": "/componenti/icon"
+        },
+        {
+          "label": "Error Page",
+          "link": "/componenti/error-page"
+        },
+        {
+          "label": "Modal",
+          "link": "/componenti/modal"
+        },
+        {
+          "label": "Language switcher",
+          "link": "/componenti/language-switcher"
+        },
+        {
+          "label": "Carousel",
+          "link": "/componenti/carousel"
+        },
+        {
+          "label": "Range",
+          "link": "/componenti/range"
+        },
+        {
+          "label": "Timeline",
+          "link": "/componenti/timeline"
+        },
+        {
+          "label": "Video Player",
+          "link": "/componenti/video-player"
+        }
+      ]
+    }
+  ]
+}

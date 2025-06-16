@@ -1,0 +1,199 @@
+header {
+  position: sticky;
+  top: 0;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.it25-top-bar {
+  height: $header-slim-height;
+
+  @include media-breakpoint-down(sm) {
+    &.it-header-slim-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .it-header-slim-wrapper-content {
+    .navbar-brand {
+      img {
+        height: 40px;
+      }
+    }
+    .header-slim-right-zone {
+      font-weight: 600;
+      .btn-full {
+        margin-top: 0;
+        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+          margin-top: -1px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, md)}) {
+          padding: 17px;
+          margin-top: -7px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          padding: 17px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &.shrink {
+    position: sticky;
+    top: 0;
+    transition: 0.4s;
+    z-index: 3;
+    height: $it25-top-bar-height-shrink;
+  }
+
+  &.thin {
+    @media (min-width: #{map-get($grid-breakpoints, md)}) {
+      height: $it25-top-bar-height-shrink;
+    }
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100% !important;
+  }
+}
+
+.it25-barra-ist {
+  top: $it25-top-bar-height-shrink;
+  transition: 0.4s;
+  z-index: 3;
+  border-bottom: 1px solid $neutral-1-a1;
+
+  .it-header-center-content-wrapper {
+    .it-brand-wrapper {
+      display: flex;
+      img {
+        height: 41px;
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          height: 54px;
+        }
+        margin-right: 24px;
+      }
+      .it-brand-text {
+        line-height: 1.555;
+        font-weight: 700;
+        font-size: 1.25rem;
+        @include media-breakpoint-up(sm) {
+          font-size: 1.5rem;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 1.75rem;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 2rem;
+        }
+      }
+      .it25-hamburger-btn-wrapper {
+        margin-right: 10px;
+        margin-left: -30px;
+        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+          margin-left: -18px;
+        }
+      }
+    }
+    .it-search-wrapper {
+      margin: 4px 0;
+      border-bottom: 1px solid $input-border;
+
+      input[type='search'] {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  img.it25-header-logo {
+    display: none;
+    @media (min-width: #{map-get($grid-breakpoints, md)}) {
+      display: block;
+    }
+  }
+
+  .it25-btn-menu,
+  .close-menu {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .it25-close-div {
+    display: none;
+    .btn {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+      display: none;
+    }
+  }
+
+  &.shrink {
+    position: sticky;
+    height: $it25-barra-ist-height-shrink;
+
+    img.it25-header-logo {
+      height: 36px;
+      margin-left: 12px;
+      display: block;
+      @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+        height: 40px;
+      }
+    }
+
+    &.it-header-center-wrapper {
+      @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+    input[type='search'] {
+      height: 1.5rem;
+    }
+  }
+
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    .custom-navbar-toggler {
+      &.it25-btn-menu {
+        display: inherit;
+      }
+    }
+  }
+}
+
+#it25-menu-vert {
+  width: 20rem;
+  overflow: auto;
+  height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
+  @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+    height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+  }
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    height: calc(100vh - $header-center-max-height - $header-slim-height);
+  }
+  background-color: $white;
+  position: absolute;
+  display: none;
+  .it25-sidebar-wrapper {
+    position: relative;
+    top: 0;
+    padding: 0;
+    z-index: 6;
+    height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
+    @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+      height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+    }
+    @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+      height: calc(100vh - $header-center-max-height - $header-slim-height);
+    }
+    .it25-sidebar-links {
+      padding: 0;
+    }
+  }
+}

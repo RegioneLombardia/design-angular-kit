@@ -1,0 +1,35 @@
+.navbar {
+  .dropdown-menu {
+    .link-list-wrapper {
+      ul li {
+        a {
+          &.list-item {
+            &.active {
+              color: $it25-gray;
+              text-decoration: none;
+              font-weight: 600;
+
+              span {
+                color: $it25-gray;
+              }
+            }
+          }
+          &.disabled {
+            cursor: not-allowed;
+            span {
+              color: $input-color-placeholder;
+            }
+          }
+
+          span {
+            color: $it25-gray;
+          }
+
+          i {
+            color: $it25-gray;
+          }
+        }
+      }
+    }
+  }
+}

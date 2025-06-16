@@ -1,0 +1,60 @@
+.callout {
+  &.callout-highlight {
+    &.success {
+      border-color: adjust-color($success, $lightness: -15%);
+    }
+    &.important {
+      border-color: adjust-color($success, $lightness: -15%);
+    }
+  }
+  &.success {
+    border-color: adjust-color($success, $lightness: -15%);
+    .callout-title {
+      color: adjust-color($success, $lightness: -15%);
+      .icon {
+        fill: adjust-color($success, $lightness: -15%);
+      }
+      span {
+        border-color: adjust-color($success, $lightness: -15%);
+      }
+    }
+    a {
+      color: adjust-color($success, $lightness: -15%);
+    }
+  }
+  &.important {
+    border-color: adjust-color($success, $lightness: -15%);
+    .callout-title {
+      color: adjust-color($success, $lightness: -15%);
+      .icon {
+        fill: adjust-color($success, $lightness: -15%);
+      }
+      span {
+        border-color: adjust-color($success, $lightness: -15%);
+      }
+    }
+    .callout-inner {
+      border-color: adjust-color($success, $lightness: -15%);
+    }
+    a {
+      color: adjust-color($success, $lightness: -15%);
+    }
+  }
+  &.warning {
+    .callout-title {
+      color: adjust-color($warning, $lightness: -25%);
+      .icon {
+        fill: adjust-color($warning, $lightness: -25%);
+      }
+      span {
+        border-color: adjust-color($warning, $lightness: -25%);
+      }
+    }
+    .callout-inner {
+      border-color: adjust-color($warning, $lightness: -25%);
+    }
+    a {
+      color: adjust-color($warning, $lightness: -25%);
+    }
+  }
+}

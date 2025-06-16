@@ -1,0 +1,20 @@
+.table {
+  &.it25-sm {
+    tr {
+      height: 48px;
+    }
+    thead,
+    tbody {
+      vertical-align: middle;
+    }
+  }
+  &.it25-md {
+    tr {
+      height: 80px;
+    }
+    thead,
+    tbody {
+      vertical-align: middle;
+    }
+  }
+}

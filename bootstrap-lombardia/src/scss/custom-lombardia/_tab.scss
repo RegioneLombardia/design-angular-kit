@@ -1,0 +1,72 @@
+.nav-tabs {
+  //tabs with icon and text
+  &.nav-tabs-icon-text {
+    &.icon-right {
+      //icons
+      .icon {
+        margin-left: 8px;
+        margin-right: 0;
+      }
+    }
+  }
+  //vertical tabs
+  &.nav-tabs-vertical {
+    &.nav-tabs-vertical-background {
+      .nav-link.active,
+      .nav-item.show .nav-link {
+        //background-color: $neutral-1-a1;
+      }
+    }
+  }
+  //link element
+  .nav-link {
+    color: $it25-gray;
+    .icon {
+      fill: $it25-gray;
+    }
+    &.disabled {
+      color: $input-color-placeholder;
+      .icon {
+        fill: $input-color-placeholder;
+      }
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    border-color: transparent;
+    border-bottom-color: $primary;
+    border-bottom-width: 3px;
+    color: $primary;
+  }
+
+  &.nav-dark {
+    .nav-link {
+      color: white;
+      .icon {
+        fill: white;
+      }
+      &:hover {
+        color: $cyan;
+        .icon {
+          fill: $cyan;
+        }
+      }
+      &.disabled {
+        color: $neutral-1-a6;
+        & .icon {
+          fill: $neutral-1-a6;
+        }
+      }
+    }
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      background-color: $gray-primary;
+      color: $cyan;
+      border-bottom: 2px solid $cyan;
+      .icon {
+        fill: $cyan;
+      }
+    }
+  }
+}

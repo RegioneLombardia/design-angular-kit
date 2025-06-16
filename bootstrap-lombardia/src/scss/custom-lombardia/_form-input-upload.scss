@@ -1,0 +1,27 @@
+//pictures wall version
+.upload-pictures-wall {
+  //input file
+  .upload {
+    //button styling
+    &[type='file'] + label {
+      border: 2px dashed $primary-a1;
+      background-color: adjust-color($primary-a1, $lightness: 10%);
+      color: $primary-a9;
+
+      .icon {
+        fill: $primary-a9;
+      }
+
+      &:hover {
+        border: 2px dashed $primary-a9;
+      }
+    }
+
+    &:focus,
+    &:active {
+      &[type='file'] + label {
+        border: 2px dashed $primary-a6;
+      }
+    }
+  }
+}

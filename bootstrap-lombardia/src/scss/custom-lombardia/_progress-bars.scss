@@ -1,0 +1,28 @@
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  &.progress-color {
+    background-color: #e5e5e5;
+  }
+  .progress-bar {
+    border-radius: 4px;
+  }
+  &.progress-lg {
+    height: 12px;
+    border-radius: 8px;
+    .progress-bar {
+      border-radius: 8px;
+    }
+  }
+}
+//progress bar
+.progress-bar {
+  background-color: $primary;
+}
+
+//button version
+.btn-progress {
+  .progress-bar {
+    height: 8px;
+  }
+}

@@ -1,0 +1,18 @@
+.chip {
+  &.chip-warning {
+    border-color: adjust-color($warning, $lightness: -25%);
+    color: adjust-color($warning, $lightness: -25%);
+
+    & > .chip-label {
+      color: adjust-color($warning, $lightness: -25%);
+    }
+  }
+  &.chip-success {
+    border-color: adjust-color($success, $lightness: -15%);
+    color: adjust-color($success, $lightness: -15%);
+
+    & > .chip-label {
+      color: adjust-color($success, $lightness: -15%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.dropdown-menu {
+  .link-list-wrapper {
+    .dropdown-item:active {
+      span {
+        color: $color-text-primary-active;
+        text-decoration: underline;
+      }
+    }
+  }
+  //hidden
+  //&[data-popper-placement='hidden'] {
+  //&:before {
+  //width: 0;
+  //height: 0;
+  //}
+  //}
+}
+
+.dropdown {
+  .btn-dropdown {
+    color: $it25-gray;
+    font-weight: 600;
+  }
+}
+
+.dropdown-item {
+  &.active,
+  &:active {
+    background-color: inherit;
+  }
+}

@@ -1,0 +1,89 @@
+// primary blue ---------------------------------
+.primary-blue-bg {
+  background-color: $primary-blue !important;
+}
+.primary-blue-color {
+  color: $primary-blue !important;
+}
+.primary-blue-border-color {
+  border-color: $primary-blue !important;
+  &.border {
+    border-color: $primary-blue !important;
+  }
+}
+.primary-blue-fill {
+  fill: $primary-blue !important;
+}
+
+// primary gray ---------------------------------
+.primary-gray-bg {
+  background-color: $primary-gray !important;
+}
+.primary-gray-color {
+  color: $primary-gray !important;
+}
+.primary-gray-border-color {
+  border-color: $primary-gray !important;
+  &.border {
+    border-color: $primary-gray !important;
+  }
+}
+
+// neutral 3
+.neutral-3-bg {
+  background-color: $neutral-3 !important;
+}
+.neutral-3-color {
+  color: $neutral-3 !important;
+}
+.neutral-3-border-color- {
+  border-color: $neutral-3 !important;
+  &.border {
+    border-color: $neutral-3 !important;
+  }
+}
+
+.radial-1 {
+  background: $radial-gradient-1;
+}
+
+.radial-2 {
+  background: $radial-gradient-2;
+}
+
+// black
+.black-bg {
+  background-color: $black !important;
+}
+.black-color {
+  color: $black !important;
+}
+.black-border-color- {
+  border-color: $black !important;
+  &.border {
+    border-color: $black !important;
+  }
+}
+
+// Patch complementary-1-color
+.complementary-1-color {
+  color: $complementary-1 !important;
+}
+// fine patch
+
+// Patch errore in b.i. sui border neutral 1 e 2
+// neutral 1
+.neutral-1-border-color {
+  border-color: $neutral-1 !important;
+  &.border {
+    border-color: $neutral-1 !important;
+  }
+}
+// neutral 2
+.neutral-2-border-color {
+  border-color: $neutral-2 !important;
+  &.border {
+    border-color: $neutral-2 !important;
+  }
+}
+// fine patch

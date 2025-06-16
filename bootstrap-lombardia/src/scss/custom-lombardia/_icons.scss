@@ -1,0 +1,70 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  &.icon-padded {
+    padding: 8px;
+  }
+  &.icon-xs {
+    width: 16px;
+    height: 16px;
+    &.icon-padded {
+      padding: 4px;
+    }
+  }
+  &.icon-sm {
+    width: 24px;
+    height: 24px;
+    &.icon-padded {
+      padding: 6px;
+    }
+  }
+  &.icon-lg {
+    width: 48px;
+    height: 48px;
+    &.icon-padded {
+      padding: 12px;
+    }
+  }
+  &.icon-xl {
+    width: 64px;
+    height: 64px;
+    &.icon-padded {
+      padding: 16px;
+    }
+  }
+  &.icon-info {
+    color: $info;
+  }
+}
+
+.icon-circle {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  transition: background-color 0.2s;
+  border: 1px solid #fff;
+}
+
+.icon-circle-shadow {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  background: #fbfbfb;
+  box-shadow: 0px 8px 13px rgba(0, 51, 84, 0.1);
+}
+
+.circle-sm {
+  width: 24px;
+  height: 24px;
+}
