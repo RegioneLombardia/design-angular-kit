@@ -1,3 +1,7 @@
+# [1.0.0-alpha.1](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha...v1.0.0-alpha.1) (2025-06-17)
+
+Prova per pubblicazione documentazione
+
 # 1.0.0-alpha (2025-06-16)
 
 Prima pre-release
