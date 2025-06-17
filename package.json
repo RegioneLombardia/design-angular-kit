@@ -35,6 +35,7 @@
     "frontend",
     "bootstrap5"
   ],
+  "homepage": "https://regionelombardia.github.io/design-angular-kit/",
   "repository": {
     "type": "git",
     "url": "https://github.com/RegioneLombardia/design-angular-kit"
