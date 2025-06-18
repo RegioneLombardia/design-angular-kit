@@ -1,3 +1,12 @@
+# [1.0.0-alpha.2](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2025-06-18)
+
+
+### Bug Fixes
+
+* tag header it25 ([ecc0d59](https://github.com/RegioneLombardia/design-angular-kit/commit/ecc0d5926787d6345c765e2ccd30ab348c793ee5))
+
+
+
 # [1.0.0-alpha.1](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha...v1.0.0-alpha.1) (2025-06-17)
 
 Prova per pubblicazione documentazione
