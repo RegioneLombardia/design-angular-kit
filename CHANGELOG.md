@@ -1,3 +1,12 @@
+# [1.0.0-alpha.3](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2025-06-19)
+
+
+### Bug Fixes
+
+* rimosso homepage in package.json ([d5afa9c](https://github.com/RegioneLombardia/design-angular-kit/commit/d5afa9c5cb75aaa1d754bad3bc3b0eb4fd65c2ad))
+
+
+
 # [1.0.0-alpha.2](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2025-06-18)
 
 
