@@ -29,3 +29,29 @@
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code%20style-prettier-ff69b4?logo=Prettier" alt="code style: prettier" /></a>
   <a href="https://github.com/eslint/eslint"><img src="https://img.shields.io/badge/formatter-angular--eslint-4B32C3?logo=eslint" alt="formatter: angular-eslint" /></a>
 </p>
+
+
+
+## Intro
+
+**Design Angular kit Lombardia** è una personalizzazione, per la Regione Lombardia, del [Design Angular kit Italia](https://italia.github.io/design-angular-kit/).
+
+Analogamente al kit da cui deriva, è un set di componenti Angular che implementa [Bootstrap Lombardia](https://regionelombardia.github.io/bootstrap-lombardia/) e le [Linee Guida per il design e l’identità visiva digitale di Regione Lombardia](https://regionelombardia.github.io/bootstrap-lombardia/docs/it25/download/Linee-guida_design_identita-visiva_Regione-Lombardia.pdf).
+
+## Come usare il kit
+
+Design Angular Kit Lombardia è disponibile su NPM, per installarlo su una applicazione esistente sulla quale provare la libreria esegui il comando
+
+```sh
+npm install design-angular-kit-lombardia --save
+```
+
+Attualmente è allineata alla versione 1.4.0 del Design Angular kit Italia, quindi utilizza la versione 18 di Angular.  
+Prima del rilascio della versione 1.0.0 effettiva, verrà allineata alla versione del Design Angular kit Italia più recente (al momento la 1.6.0 basata su Angular 20), purchè venga dichiarata "stabile".
+
+## Configurazione
+Per la configurazione si veda la [configurazione](https://github.com/italia/design-angular-kit?tab=readme-ov-file#configurazione) del Design Angular kit Italia.  
+Naturalmente **sostituendo** di volta in volta le voci:
+* `design-angular-kit` con `design-angular-kit-lombardia`
+* `bootstrap-italia` con `bootstrap-lombardia`
+* `italia.github.io` con `regionelombardia.github.io`
