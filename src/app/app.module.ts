@@ -8,14 +8,30 @@ import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EXAMPLES_MODULES } from './examples';
+import { IT25EXAMPLES_MODULES } from './it25/examples';
 import { LinkSortPipe } from './link-sort.pipe';
 import { RouterDispatcherComponent } from './router-dispatcher/router-dispatcher.component';
+import { It25RouterDispatcherComponent } from './it25/router-dispatcher/router-dispatcher.component';
 import { TableOfContentItemComponent } from './table-of-content-item/table-of-content-item.component';
 import { TableOfContentComponent } from './table-of-content/table-of-content.component';
 
 @NgModule({
-  declarations: [AppComponent, TableOfContentComponent, TableOfContentItemComponent, RouterDispatcherComponent, LinkSortPipe],
-  imports: [BrowserModule, AppRoutingModule, DesignAngularKitModule.forRoot(), NgTemplateOutlet, ...EXAMPLES_MODULES],
+  declarations: [
+    AppComponent,
+    TableOfContentComponent,
+    TableOfContentItemComponent,
+    RouterDispatcherComponent,
+    It25RouterDispatcherComponent,
+    LinkSortPipe,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DesignAngularKitModule.forRoot(),
+    NgTemplateOutlet,
+    ...EXAMPLES_MODULES,
+    ...IT25EXAMPLES_MODULES,
+  ],
   providers: [
     TranslateStore,
     {

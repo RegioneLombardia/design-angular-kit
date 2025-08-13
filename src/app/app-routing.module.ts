@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ItErrorPageComponent } from 'design-angular-kit/components/utils/error-page/error-page.component';
 import { EXAMPLES_ROUTES } from './examples/routes';
+import { IT25EXAMPLES_ROUTES } from './it25/examples/routes';
 import { RouterDispatcherComponent } from './router-dispatcher/router-dispatcher.component';
+import { It25RouterDispatcherComponent } from './it25/router-dispatcher/router-dispatcher.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'info', pathMatch: 'full' },
@@ -110,6 +112,7 @@ const routes: Routes = [
     ],
   },
   { path: 'esempi', component: RouterDispatcherComponent, children: EXAMPLES_ROUTES },
+  { path: 'it25-esempi', component: It25RouterDispatcherComponent, children: IT25EXAMPLES_ROUTES },
   { path: 'error/not-found', component: ItErrorPageComponent, data: { errorCode: 404 } },
   { path: 'error/forbidden', component: ItErrorPageComponent, data: { errorCode: 403 } },
   { path: 'error/server-error', component: ItErrorPageComponent, data: { errorCode: 500 } },

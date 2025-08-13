@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-example.component.scss'],
 })
 export class HeaderExampleComponent {
-  sticky = false;
   search = false;
   login = 'none';
   menu = 'horizontal';

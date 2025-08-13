@@ -1,10 +1,28 @@
+header {
+  &.it25-header {
+    position: sticky;
+    top: 0;
+  }
+}
+
 .it-header-navbar-wrapper {
   &.theme-light-desk {
-    &.it25-menu-orizzontale {
-      top: 28%;
-      margin-top: 0;
-      @media screen and (max-width: 991px) {
-        background: transparent;
+    top: 22%;
+    margin-top: 0;
+    @media screen and (max-width: 991px) {
+      background: transparent;
+      left: -10px;
+    }
+  }
+}
+
+.it25-barra-ist {
+  .it-header-center-content-wrapper {
+    .it-brand-wrapper {
+      .it25-hamburger-btn-wrapper {
+        @media (max-width: 991px) {
+          margin-left: -48px;
+        }
       }
     }
   }

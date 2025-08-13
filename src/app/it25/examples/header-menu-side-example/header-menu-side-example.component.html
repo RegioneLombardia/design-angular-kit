@@ -1,0 +1,449 @@
+<it25-header [loginStyle]="login" menuStyle="sidebar" [showSearch]="search" [megamenu]="true">
+  <ng-container slimRightZone>
+    <it-language-switcher mode="nav"></it-language-switcher>
+  </ng-container>
+  <ng-container userSettings>
+    <it-dropdown mode="nav">
+      <span button>
+        <svg class="icon icon-white"><use xlink:href="bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use></svg>
+        <strong>Utente/ruolo</strong>
+      </span>
+      <ng-container list>
+        <it-dropdown-item>Dati Profilo</it-dropdown-item>
+        <it-dropdown-item>Impostazioni</it-dropdown-item>
+        <it-dropdown-item>Disconnetti</it-dropdown-item>
+      </ng-container>
+    </it-dropdown>
+  </ng-container>
+  <ng-container brand>
+    <a href="#">
+      <img src="bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+      <div class="it-brand-text">ACRONIMO <span class="d-none d-lg-inline">Nome applicativo</span></div>
+    </a>
+  </ng-container>
+  <div class="d-none d-md-flex" rightZone></div>
+  <ng-container sidebarNavItems>
+    <nav class="it25-vertical-menu" id="it25-main-nav">
+      <it-sidebar class="d-block d-md-none">
+        <it-list linkList="true">
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse0.isOpen()"
+                  (click)="itCollapse0.toggle()"
+                  (keydown)="itCollapse0.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse0="itCollapse">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse1.isOpen()"
+                  (click)="itCollapse1.toggle()"
+                  (keydown)="itCollapse1.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse1="itCollapse" opened="true">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right active"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse2.isOpen()"
+                  (click)="itCollapse2.toggle()"
+                  (keydown)="itCollapse2.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse2="itCollapse" opened="true">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse3.isOpen()"
+                  (click)="itCollapse3.toggle()"
+                  (keydown)="itCollapse3.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse3="itCollapse" opened="true">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse4.isOpen()"
+                  (click)="itCollapse4.toggle()"
+                  (keydown)="itCollapse4.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse4="itCollapse" opened="true">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+          <it-list-item>
+            <it-list linkList="true">
+              <it-list-item iconRight="true">
+                <a
+                  class="list-item large medium icon-right"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-expanded]="itCollapse5.isOpen()"
+                  (click)="itCollapse5.toggle()"
+                  (keydown)="itCollapse5.toggle()">
+                  <span class="list-item-title-icon-wrapper">
+                    <span class="list-item-title">Link lista collassabile</span>
+                    <it-icon name="expand" color="primary"></it-icon>
+                  </span>
+                </a>
+                <it-collapse #itCollapse5="itCollapse" opened="true">
+                  <it-list linkSubList="true" action>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 1</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 2</span>
+                    </it-list-item>
+                    <it-list-item href="#" externalLink="true">
+                      <span class="text">Link lista 3</span>
+                    </it-list-item>
+                  </it-list>
+                </it-collapse>
+              </it-list-item>
+            </it-list>
+          </it-list-item>
+        </it-list>
+      </it-sidebar>
+    </nav>
+  </ng-container>
+</it25-header>
+<main>
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 it25-sidebar">
+        <nav class="it25-vertical-menu collapse" id="it25-main-nav">
+          <it-sidebar>
+            <it-list linkList="true">
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse20.isOpen()"
+                      (click)="itCollapse20.toggle()"
+                      (keydown)="itCollapse20.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse20="itCollapse">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse21.isOpen()"
+                      (click)="itCollapse21.toggle()"
+                      (keydown)="itCollapse21.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse21="itCollapse" opened="true">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right active"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse22.isOpen()"
+                      (click)="itCollapse22.toggle()"
+                      (keydown)="itCollapse22.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse22="itCollapse" opened="true">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse23.isOpen()"
+                      (click)="itCollapse23.toggle()"
+                      (keydown)="itCollapse23.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse23="itCollapse" opened="true">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse24.isOpen()"
+                      (click)="itCollapse24.toggle()"
+                      (keydown)="itCollapse24.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse24="itCollapse" opened="true">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+              <it-list-item>
+                <it-list linkList="true">
+                  <it-list-item iconRight="true">
+                    <a
+                      class="list-item large medium icon-right"
+                      role="button"
+                      tabindex="0"
+                      [attr.aria-expanded]="itCollapse25.isOpen()"
+                      (click)="itCollapse25.toggle()"
+                      (keydown)="itCollapse25.toggle()">
+                      <span class="list-item-title-icon-wrapper">
+                        <span class="list-item-title">Link lista collassabile</span>
+                        <it-icon name="expand" color="primary"></it-icon>
+                      </span>
+                    </a>
+                    <it-collapse #itCollapse25="itCollapse" opened="true">
+                      <it-list linkSubList="true" action>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 1</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 2</span>
+                        </it-list-item>
+                        <it-list-item href="#" externalLink="true">
+                          <span class="text">Link lista 3</span>
+                        </it-list-item>
+                      </it-list>
+                    </it-collapse>
+                  </it-list-item>
+                </it-list>
+              </it-list-item>
+            </it-list>
+          </it-sidebar>
+        </nav>
+      </div>
+      <div class="col-12 col-md-9 p-3">
+        <p><a routerLink="/it25/header">Ritorno alla Documentazione </a></p>
+        <div class="col-auto">
+          <it-callout [color]="color" [label]="label">
+            <p>
+              Con questo tipo di menù è <strong>necessario duplicare la lista di link</strong> per inserirla sia nell'<strong
+                >header</strong
+              >
+              che nel <strong>main</strong>.<br />
+              La lista nel main viene visualizzata sugli schermi ampi, invece su quelli piccoli (tipicamente quelli degli smartphone)
+              compare automaticamente il bottone hamburger che comanda l'apertura della lista nell'header.
+            </p>
+          </it-callout>
+        </div>
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <div class="img-wrapper">
+              <img
+                src="bootstrap-lombardia/dist/assets/img/bike-sharing.jpg"
+                alt="foro bike sharing davanti a palazzo lombardia"
+                title="bike shariing a milano" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<it25-footer acronym="ACCREDITAS" applicationName="Sistema di accreditamento">
+  <ng-container></ng-container>
+</it25-footer>
+
+<p class="m-3"><a routerLink="/it25/header">Ritorno alla Documentazione </a></p>

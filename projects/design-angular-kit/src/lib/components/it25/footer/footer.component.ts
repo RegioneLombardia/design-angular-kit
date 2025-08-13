@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
-import { inputToBoolean } from '../../../utils/coercion';
 
 @Component({
   selector: 'it25-footer',
@@ -13,14 +12,4 @@ export class It25FooterComponent {
   @Input() public acronym?: string;
   /** Nome dell'applicativo */
   @Input() public applicationName: string | undefined;
-  /**
-   * Area per logo multipli
-   * @default false
-   */
-  @Input({ transform: inputToBoolean }) logos?: boolean;
-  /**
-   * Area multilink
-   * @default false
-   */
-  @Input({ transform: inputToBoolean }) multilink?: boolean;
 }

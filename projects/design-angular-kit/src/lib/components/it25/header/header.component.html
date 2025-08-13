@@ -1,38 +1,49 @@
-<header #headerWrapper class="it-header-wrapper" data-bs-position-type="fixed" data-bs-target="#header-nav-wrapper">
-  @if (showSlim) {
-    <div class="it-header-slim-wrapper it25-top-bar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="it-header-slim-wrapper-content">
-              <a class="navbar-brand" href="#">
-                <img src="bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
-              </a>
-              <div class="it-header-slim-right-zone">
-                <ng-content select="[slimRightZone]"></ng-content>
-                @if (loginStyle === 'default') {
-                  <a class="btn btn-primary btn-sm btn-full" (click)="emitLoginClick($event)" href="#">
-                    <it-icon name="user" color="white"></it-icon>
-                    {{ 'it.navigation.login' | translate }}
-                  </a>
-                }
-                @if (loginStyle === 'logged') {
-                  <ng-content select="[userSettings]"></ng-content>
-                }
-              </div>
+<header #headerWrapper class="it25-header it-header-wrapper" data-bs-position-type="fixed" data-bs-target="#header-nav-wrapper">
+  <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#">
+              <img src="bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+            </a>
+            <div class="it-header-slim-right-zone">
+              <ng-content select="[slimRightZone]"></ng-content>
+              @if (loginStyle === 'default') {
+                <a class="btn btn-primary btn-sm btn-full" (click)="emitLoginClick($event)" href="#">
+                  <it-icon name="user" color="white"></it-icon>
+                  {{ 'it.navigation.login' | translate }}
+                </a>
+              }
+              @if (loginStyle === 'logged') {
+                <ng-content select="[userSettings]"></ng-content>
+              }
             </div>
           </div>
         </div>
       </div>
     </div>
-  }
+  </div>
   <div class="it-nav-wrapper">
-    <div class="it-header-center-wrapper it25-barra-ist" [class.it-small-header]="smallHeader">
+    <div class="it-header-center-wrapper it25-barra-ist">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="it-header-center-content-wrapper">
               <div class="it-brand-wrapper">
+                @if (menuStyle === 'vertical') {
+                  <div class="it25-hamburger-btn-wrapper">
+                    <button
+                      (click)="toggleVertMenu()"
+                      #collapseButton
+                      class="btn btn-xs d-block"
+                      type="button"
+                      [attr.aria-label]="'it.navbar.aria-label-toggle' | translate">
+                      <it-icon id="menu-ver-icon-open" name="burger" color="primary"></it-icon>
+                      <it-icon id="menu-ver-icon-close" name="close-big" color="primary" style="display: none"></it-icon>
+                    </button>
+                  </div>
+                }
                 <ng-content select="[brand]"></ng-content>
               </div>
               <div class="it-right-zone">
@@ -58,6 +69,7 @@
         </div>
       </div>
     </div>
+
     @if (menuStyle === 'horizontal') {
       <div class="it-header-navbar-wrapper theme-light-desk it25-menu-orizzontale" id="header-nav-wrapper">
         <div class="container-fluid">
@@ -73,12 +85,26 @@
         </div>
       </div>
     }
+    @if (menuStyle === 'sidebar') {
+      <div class="it-header-navbar-wrapper theme-light-desk" id="header-nav-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <it25-navbar [megamenu]="megamenu" [expand]="expand" [sidebar]="true">
+                <ng-container navItems>
+                  <ng-content select="[sidebarNavItems]"></ng-content>
+                </ng-container>
+              </it25-navbar>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
   </div>
+
   @if (menuStyle === 'vertical') {
-    <it25-navbar [megamenu]="megamenu" [expand]="expand" [vertical]="true">
-      <ng-container navItems>
-        <ng-content select="[verticalNavItems]"></ng-content>
-      </ng-container>
-    </it25-navbar>
+    <ng-container navItems>
+      <ng-content select="[verticalNavItems]"></ng-content>
+    </ng-container>
   }
 </header>

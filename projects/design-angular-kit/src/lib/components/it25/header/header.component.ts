@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ItIconComponent } from '../../utils/icon/icon.component';
 import { It25NavBarModule } from '../navbar/navbar.module';
@@ -6,7 +6,6 @@ import { It25NavBarComponent } from '../navbar/navbar/navbar.component';
 
 import { ItButtonDirective } from '../../core/button/button.directive';
 import { inputToBoolean } from '../../../utils/coercion';
-// import { HeaderSticky } from 'bootstrap-lombardia';
 
 @Component({
   standalone: true,
@@ -16,17 +15,8 @@ import { inputToBoolean } from '../../../utils/coercion';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [TranslateModule, ItIconComponent, ItButtonDirective, It25NavBarModule],
 })
-export class It25HeaderComponent implements AfterViewInit {
-  //   @Input({ transform: inputToBoolean }) sticky?: boolean;
-
-  @Input({ transform: inputToBoolean }) showSlim?: boolean = true;
-
-  @Input({ transform: inputToBoolean }) smallHeader?: boolean = true;
-
+export class It25HeaderComponent {
   @Input({ transform: inputToBoolean }) showSearch?: boolean = true;
-
-  //   @Input() slimTitle: string | undefined;
-  //   @Input() slimTitleLink: string | undefined = '#';
 
   @Input() loginStyle: 'none' | 'default' | 'logged' = 'none';
   @Input() menuStyle: 'none' | 'horizontal' | 'vertical' | 'sidebar' = 'horizontal';
@@ -43,22 +33,10 @@ export class It25HeaderComponent implements AfterViewInit {
   @Input({ transform: inputToBoolean }) megamenu?: boolean;
   @Input({ transform: inputToBoolean }) expand?: boolean = true;
 
-  //   private stickyHeader?: HeaderSticky;
-
   constructor() {
     this.loginClick = new EventEmitter<Event>();
     this.menuClick = new EventEmitter<Event>();
     this.searchClick = new EventEmitter<Event>();
-  }
-
-  ngAfterViewInit() {
-    this.updateListeners();
-  }
-
-  updateListeners() {
-    //     if (!this.stickyHeader && this.headerWrapper && this.sticky) {
-    //       this.stickyHeader = new HeaderSticky(this.headerWrapper.nativeElement);
-    //     }
   }
 
   protected emitLoginClick(event: Event): void {
@@ -78,5 +56,20 @@ export class It25HeaderComponent implements AfterViewInit {
 
   toggleCollapse() {
     this.it25NavBarComponent?.toggleCollapse();
+  }
+
+  toggleVertMenu() {
+    const vMenu = document.getElementById('it25-menu-vert');
+    const closeIcon = document.getElementById('menu-ver-icon-close');
+    const burgerIcon = document.getElementById('menu-ver-icon-open');
+    if (vMenu.style.display == 'block') {
+      vMenu.style.display = 'none';
+      burgerIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    } else {
+      vMenu.style.display = 'block';
+      burgerIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    }
   }
 }

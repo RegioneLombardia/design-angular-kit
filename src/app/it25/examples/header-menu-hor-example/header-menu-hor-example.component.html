@@ -1,0 +1,137 @@
+<!-- Header - INIZIO -->
+<it25-header [loginStyle]="login" menuStyle="horizontal" [showSearch]="search" [megamenu]="true">
+  <!-- Top bar - INIZIO -->
+  <ng-container slimRightZone>
+    <it-language-switcher mode="nav"></it-language-switcher>
+  </ng-container>
+  <ng-container userSettings>
+    <it-dropdown mode="nav">
+      <span button>
+        <svg class="icon icon-white"><use xlink:href="bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use></svg>
+        <strong>Utente/ruolo</strong>
+      </span>
+      <ng-container list>
+        <it-dropdown-item>Dati Profilo</it-dropdown-item>
+        <it-dropdown-item>Impostazioni</it-dropdown-item>
+        <it-dropdown-item>Disconnetti</it-dropdown-item>
+      </ng-container>
+    </it-dropdown>
+  </ng-container>
+  <!-- Top bar - FINE -->
+
+  <!-- Barra Istituzionale - INIZIO -->
+  <ng-container brand>
+    <a href="#">
+      <img src="bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+      <div class="it-brand-text">ACRONIMO <span class="d-none d-lg-inline">Nome applicativo</span></div>
+    </a>
+  </ng-container>
+  <div class="d-none d-md-flex" rightZone></div>
+  <!-- Barra Istituzionale - Fine -->
+
+  <!-- Menu orizzontale - INIZIO -->
+  <ng-container navItems>
+    <it25-navbar-item
+      ><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></it25-navbar-item
+    >
+    <it25-navbar-item
+      ><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></it25-navbar-item
+    >
+    <it25-navbar-item
+      ><a class="nav-link" href="#"><span>Link 3</span></a></it25-navbar-item
+    >
+    <it25-navbar-item
+      ><a class="nav-link" href="#"><span>Link 4</span></a></it25-navbar-item
+    >
+    <it25-navbar-item>
+      <it-dropdown mode="nav">
+        <span button>Menu dropdown</span>
+        <ng-container list>
+          <it-dropdown-item>Link lista 1</it-dropdown-item>
+          <it-dropdown-item>Link lista 2</it-dropdown-item>
+        </ng-container>
+      </it-dropdown>
+    </it25-navbar-item>
+    <it25-navbar-item>
+      <it-dropdown mode="nav" [megamenu]="true">
+        <span button>Megamenu</span>
+        <ng-container list>
+          <it-megamenu [mode]="'normal'">
+            <ng-container megamenuLinkList>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-heading text-primary">Heading 1</div>
+                <it-list linkList="true">
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 1</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 2</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 3</span>
+                  </it-list-item>
+                </it-list>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-heading text-primary">Heading 2</div>
+                <it-list linkList="true">
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 4</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 5</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 6</span>
+                  </it-list-item>
+                </it-list>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-heading text-primary">Heading 3</div>
+                <it-list linkList="true">
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 7</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true" disabled="true">
+                    <span>Link lista 8</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <span>Link lista 9</span>
+                  </it-list-item>
+                </it-list>
+              </div>
+            </ng-container>
+          </it-megamenu>
+        </ng-container>
+      </it-dropdown>
+    </it25-navbar-item>
+  </ng-container>
+  <!-- Menu orizzontale - FINE -->
+</it25-header>
+<!-- Header - FINE -->
+
+<main>
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col p-3">
+        <p><a routerLink="/it25/header">Ritorno alla Documentazione </a></p>
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <div class="img-wrapper">
+              <img
+                src="bootstrap-lombardia/dist/assets/img/bike-sharing.jpg"
+                alt="foro bike sharing davanti a palazzo lombardia"
+                title="bike shariing a milano" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<it25-footer acronym="ACCREDITAS" applicationName="Sistema di accreditamento">
+  <ng-container></ng-container>
+</it25-footer>
+
+<p class="m-3"><a routerLink="/it25/header">Ritorno alla Documentazione </a></p>

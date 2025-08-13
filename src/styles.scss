@@ -25,6 +25,7 @@
   letter-spacing: unset;
   margin-bottom: 0;
 }
+
 @media (min-width: 576px) {
   .bd-logo-title {
     font-size: 24px;
@@ -80,5 +81,27 @@
   padding: 0 !important;
   div.tab-content div.tab-pane {
     padding: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    .close-div {
+      top: 69px;
+    }
+    .navbar-collapsable {
+      top: 69px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    .close-div {
+      top: 74px;
+    }
+    .navbar-collapsable {
+      top: 74px;
+    }
   }
 }
