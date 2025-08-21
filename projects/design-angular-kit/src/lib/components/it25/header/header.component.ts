@@ -62,14 +62,16 @@ export class It25HeaderComponent {
     const vMenu = document.getElementById('it25-menu-vert');
     const closeIcon = document.getElementById('menu-ver-icon-close');
     const burgerIcon = document.getElementById('menu-ver-icon-open');
-    if (vMenu.style.display == 'block') {
-      vMenu.style.display = 'none';
-      burgerIcon.style.display = 'block';
-      closeIcon.style.display = 'none';
-    } else {
-      vMenu.style.display = 'block';
-      burgerIcon.style.display = 'none';
-      closeIcon.style.display = 'block';
+    if (vMenu && closeIcon && burgerIcon) {
+      if (vMenu.style.display == 'block') {
+        vMenu.style.display = 'none';
+        burgerIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      } else {
+        vMenu.style.display = 'block';
+        burgerIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+      }
     }
   }
 }
