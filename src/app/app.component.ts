@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-const { version: appVersion } = require('../../package.json');
-import TableOfContent from '../assets/table-of-content.json';
+// const { version: appVersion } = require('../../package.json');
+// import TableOfContent from '../assets/table-of-content.json';
 
 @Component({
   selector: 'it-root',
@@ -8,7 +8,7 @@ import TableOfContent from '../assets/table-of-content.json';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  tableOfContent = (<any>TableOfContent).tableOfContent;
+  //   tableOfContent = (<any>TableOfContent).tableOfContent;
   title = 'design-angular-kit-doc';
-  version = appVersion;
+  //   version = appVersion;
 }

@@ -1,45 +1,72 @@
-<nav class="navbar navbar-expand-lg py-1 px-3" style="position: sticky; top: 0; z-index: 10">
-  <a class="navbar-brand py-2 text-decoration-none" href="#" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
-    <div class="d-flex flex-row">
-      <img
-        src="bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png"
-        height="50px"
-        alt="logo regione lombardia"
-        class="d-none d-md-block" />
-      <div class="d-flex flex-column ps-3 ps-sm-4">
-        <h1 class="bd-logo-title white-color">Design Angular Kit Lombardia</h1>
-        <div class="bd-logo-subtitle white-color">
-          Versione del Design Angular Kit Italia
-          <span class="d-none d-md-inline"> per la Regione Lombardia</span>
-          <span class="d-none d-xl-inline"></span>
+<div id="docHeaderWrapper" style="position: fixed; top: 0; width: 100%; z-index: 10; border-bottom: solid 1px lightgrey">
+  <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#">
+              <img src="bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </a>
-  <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
-    <li class="nav-item me-4">
-      <a
-        href="https://github.com/RegioneLombardia/design-angular-kit/releases/tag/v{{ version }}"
-        aria-label="Ultima release"
-        target="_blank">
-        <it-icon color="white" size="sm" name="file"></it-icon>
-        <span style="color: white">v{{ version }}</span>
+  </div>
+  <it-header idCollapsable="it25-doc-nav" [showSearch]="false" [showSlim]="false" [sticky]="false" [expand]="true" [light]="true" #headerEl>
+    <ng-container brand>
+      <a href="#">
+        <img
+          src="bootstrap-lombardia/dist/assets/img/logo-rl.png"
+          alt="logo regione lombardia"
+          class="it25-header-logo d-none d-md-block" />
+        <div class="it-brand-text" style="margin-left: 3rem">
+          <div class="it-brand-title">Design Angular Kit Lombardia</div>
+          <div class="bd-logo-subtitle">
+            Versione del Design Angular Kit Italia
+            <span class="d-none d-md-inline"> per la Regione Lombardia</span>
+            <span class="d-none d-xl-inline"></span>
+          </div>
+        </div>
       </a>
-    </li>
-    <li class="nav-item me-4">
-      <a href="https://github.com/RegioneLombardia/design-angular-kit/" aria-label="Github" target="_blank">
-        <it-icon color="white" size="sm" name="github"></it-icon>
-      </a>
-    </li>
-  </ul>
-</nav>
+    </ng-container>
+    <div class="it-socials d-none d-md-flex" rightZone>
+      <ul>
+        <li>
+          <a href="https://github.com/italia/design-angular-kit/releases/tag/v{{ version }}" aria-label="Ultima release" target="_blank">
+            <it-icon name="file"></it-icon>v{{ version }}
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RegioneLombardia/design-angular-kit/" aria-label="Github" target="_blank">
+            <it-icon name="github"></it-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ng-container navItems>
+      <nav id="it25-doc-nav">
+        @for (item of tableOfContent; track item.label) {
+          <it-navbar-item class="d-md-none">
+            <it-dropdown mode="nav">
+              <span button>{{ item.label }}</span>
+              <ng-container list>
+                @for (link of item.links; track link.label) {
+                  <it-dropdown-item [externalLink]="false" [href]="link.link" (click)="headerEl.closeNavBar()">{{
+                    link.label
+                  }}</it-dropdown-item>
+                }
+              </ng-container>
+            </it-dropdown>
+          </it-navbar-item>
+        }
+      </nav>
+    </ng-container>
+  </it-header>
+</div>
 <div class="container-fluid">
   <div class="row flex-xl-nowrap">
-    <div class="collapse" id="docsNav">
-      <it-table-of-content class="col-12 d-md-none"></it-table-of-content>
-    </div>
     <it-table-of-content class="d-none d-md-flex col-md-3 col-xl-2"></it-table-of-content>
-    <main class="col-12 col-md-9 col-xl-10 py-md-3 px-md-3 bd-content">
+    <main class="col-12 col-md-9 col-xl-10 py-md-3 px-md-3 bd-content" style="margin-top: 135px">
       <router-outlet></router-outlet>
     </main>
   </div>
