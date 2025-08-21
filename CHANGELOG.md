@@ -1,3 +1,17 @@
+# [1.0.0-beta](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.3...v1.0.0-beta) (2025-08-21)
+
+
+### Bug Fixes
+
+* errori build lib ([a59e1c4](https://github.com/RegioneLombardia/design-angular-kit/commit/a59e1c46581802bab61219b0d201b199aa0cc65c))
+
+
+### Features
+
+* componente header e pagine di esempio ([5e7f833](https://github.com/RegioneLombardia/design-angular-kit/commit/5e7f8337d106f2848e2b2f5594e8d863d9e82f08))
+
+
+
 # [1.0.0-alpha.3](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2025-06-19)
 
 
