@@ -9825,7 +9825,7 @@
     "components": [
         {
             "name": "It25FooterComponent",
-            "id": "component-It25FooterComponent-8a6e74df5b39c60461a0bee57c0f5323b222801ebe716ad3454db7b5e1e2eef9d1aa4f9b67ce3c6ce851d962ba14e893d8afc5b6eb40b038987d8f0780cec282",
+            "id": "component-It25FooterComponent-ebfb77eecf21d2fe31f4949b037ef7411fe6f8ad592c2f94e6029a4d249525a9034a116a6314096f758b4a60da5aa3f52d829a9338dce2430f2744a4313b2705",
             "file": "projects/design-angular-kit/src/lib/components/it25/footer/footer.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -9847,7 +9847,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\nAcronimo dell'applicativo",
                     "description": "<p>Acronimo dell&#39;applicativo</p>\n",
-                    "line": 13,
+                    "line": 12,
                     "type": "string",
                     "decorators": []
                 },
@@ -9857,70 +9857,8 @@
                     "deprecationMessage": "",
                     "rawdescription": "\nNome dell'applicativo",
                     "description": "<p>Nome dell&#39;applicativo</p>\n",
-                    "line": 15,
+                    "line": 14,
                     "type": "string | undefined",
-                    "decorators": []
-                },
-                {
-                    "required": false,
-                    "name": "logos",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "pos": 528,
-                            "end": 546,
-                            "flags": 16842752,
-                            "modifierFlagsCache": 0,
-                            "transformFlags": 0,
-                            "kind": 334,
-                            "tagName": {
-                                "pos": 529,
-                                "end": 536,
-                                "flags": 16842752,
-                                "modifierFlagsCache": 0,
-                                "transformFlags": 0,
-                                "kind": 80,
-                                "escapedText": "default"
-                            },
-                            "comment": "<p>false</p>\n"
-                        }
-                    ],
-                    "rawdescription": "\n\nArea per logo multipli\n",
-                    "description": "<p>Area per logo multipli</p>\n",
-                    "line": 20,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "required": false,
-                    "name": "multilink",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "pos": 637,
-                            "end": 655,
-                            "flags": 16842752,
-                            "modifierFlagsCache": 0,
-                            "transformFlags": 0,
-                            "kind": 334,
-                            "tagName": {
-                                "pos": 638,
-                                "end": 645,
-                                "flags": 16842752,
-                                "modifierFlagsCache": 0,
-                                "transformFlags": 0,
-                                "kind": 80,
-                                "escapedText": "default"
-                            },
-                            "comment": "<p>false</p>\n"
-                        }
-                    ],
-                    "rawdescription": "\n\nArea multilink\n",
-                    "description": "<p>Area multilink</p>\n",
-                    "line": 25,
-                    "type": "boolean",
                     "decorators": []
                 }
             ],
@@ -9940,7 +9878,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgTemplateOutlet } from '@angular/common';\nimport { inputToBoolean } from '../../../utils/coercion';\n\n@Component({\n  selector: 'it25-footer',\n  standalone: true,\n  imports: [NgTemplateOutlet],\n  templateUrl: './footer.component.html',\n})\nexport class It25FooterComponent {\n  /** Acronimo dell'applicativo */\n  @Input() public acronym?: string;\n  /** Nome dell'applicativo */\n  @Input() public applicationName: string | undefined;\n  /**\n   * Area per logo multipli\n   * @default false\n   */\n  @Input({ transform: inputToBoolean }) logos?: boolean;\n  /**\n   * Area multilink\n   * @default false\n   */\n  @Input({ transform: inputToBoolean }) multilink?: boolean;\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgTemplateOutlet } from '@angular/common';\n\n@Component({\n  selector: 'it25-footer',\n  standalone: true,\n  imports: [NgTemplateOutlet],\n  templateUrl: './footer.component.html',\n})\nexport class It25FooterComponent {\n  /** Acronimo dell'applicativo */\n  @Input() public acronym?: string;\n  /** Nome dell'applicativo */\n  @Input() public applicationName: string | undefined;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -9949,7 +9887,7 @@
         },
         {
             "name": "It25HeaderComponent",
-            "id": "component-It25HeaderComponent-e6c6c7953e06fff9377c2e3a433a477c6c902939f62431599018051c0882a328d5a2e1dd0a2409fbf0fb67c6d753dca29ecdadbeba414f11e1a973f1d5a85d09",
+            "id": "component-It25HeaderComponent-1ac0a2ec4fd816b9ec1a10f7973026e096cd39f3ceafc38a91712f6adc6af4a0aa1b4efb18bd689443a01ca0d8e120790f4018ad74d4236b053bd29448707945",
             "file": "projects/design-angular-kit/src/lib/components/it25/header/header.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -9974,7 +9912,7 @@
                     "defaultValue": "true",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 44,
+                    "line": 34,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -9983,7 +9921,7 @@
                     "defaultValue": "'none'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 31,
+                    "line": 21,
                     "type": "\"none\" | \"default\" | \"logged\"",
                     "decorators": []
                 },
@@ -9992,7 +9930,7 @@
                     "name": "megamenu",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 43,
+                    "line": 33,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -10001,7 +9939,7 @@
                     "defaultValue": "'horizontal'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 32,
+                    "line": 22,
                     "type": "\"none\" | \"horizontal\" | \"vertical\" | \"sidebar\"",
                     "decorators": []
                 },
@@ -10011,27 +9949,7 @@
                     "defaultValue": "true",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "required": false,
-                    "name": "showSlim",
-                    "defaultValue": "true",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 22,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "required": false,
-                    "name": "smallHeader",
-                    "defaultValue": "true",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 24,
+                    "line": 19,
                     "type": "boolean",
                     "decorators": []
                 }
@@ -10041,21 +9959,21 @@
                     "name": "loginClick",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 34,
+                    "line": 24,
                     "type": "EventEmitter<Event>"
                 },
                 {
                     "name": "menuClick",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 35,
+                    "line": 25,
                     "type": "EventEmitter<Event>"
                 },
                 {
                     "name": "searchClick",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 37,
+                    "line": 27,
                     "type": "EventEmitter<Event>"
                 }
             ],
@@ -10067,7 +9985,7 @@
                     "type": "ElementRef<HTMLButtonElement>",
                     "optional": true,
                     "description": "",
-                    "line": 39,
+                    "line": 29,
                     "decorators": [
                         {
                             "name": "ViewChild",
@@ -10086,7 +10004,7 @@
                     "type": "It25NavBarComponent",
                     "optional": true,
                     "description": "",
-                    "line": 41,
+                    "line": 31,
                     "decorators": [
                         {
                             "name": "ViewChild",
@@ -10113,7 +10031,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 64,
+                    "line": 42,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -10144,7 +10062,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 69,
+                    "line": 47,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -10175,7 +10093,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 74,
+                    "line": 52,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -10194,32 +10112,22 @@
                     ]
                 },
                 {
-                    "name": "ngAfterViewInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 54,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
                     "name": "toggleCollapse",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 79,
+                    "line": 57,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
                 {
-                    "name": "updateListeners",
+                    "name": "toggleVertMenu",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 58,
+                    "line": 61,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -10250,11 +10158,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';\nimport { TranslateModule } from '@ngx-translate/core';\nimport { ItIconComponent } from '../../utils/icon/icon.component';\nimport { It25NavBarModule } from '../navbar/navbar.module';\nimport { It25NavBarComponent } from '../navbar/navbar/navbar.component';\n\nimport { ItButtonDirective } from '../../core/button/button.directive';\nimport { inputToBoolean } from '../../../utils/coercion';\n// import { HeaderSticky } from 'bootstrap-lombardia';\n\n@Component({\n  standalone: true,\n  selector: 'it25-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  imports: [TranslateModule, ItIconComponent, ItButtonDirective, It25NavBarModule],\n})\nexport class It25HeaderComponent implements AfterViewInit {\n  //   @Input({ transform: inputToBoolean }) sticky?: boolean;\n\n  @Input({ transform: inputToBoolean }) showSlim?: boolean = true;\n\n  @Input({ transform: inputToBoolean }) smallHeader?: boolean = true;\n\n  @Input({ transform: inputToBoolean }) showSearch?: boolean = true;\n\n  //   @Input() slimTitle: string | undefined;\n  //   @Input() slimTitleLink: string | undefined = '#';\n\n  @Input() loginStyle: 'none' | 'default' | 'logged' = 'none';\n  @Input() menuStyle: 'none' | 'horizontal' | 'vertical' | 'sidebar' = 'horizontal';\n\n  @Output() loginClick: EventEmitter<Event>;\n  @Output() menuClick: EventEmitter<Event>;\n\n  @Output() searchClick: EventEmitter<Event>;\n\n  @ViewChild('headerWrapper') private headerWrapper?: ElementRef<HTMLButtonElement>;\n\n  @ViewChild(It25NavBarComponent) private it25NavBarComponent?: It25NavBarComponent;\n\n  @Input({ transform: inputToBoolean }) megamenu?: boolean;\n  @Input({ transform: inputToBoolean }) expand?: boolean = true;\n\n  //   private stickyHeader?: HeaderSticky;\n\n  constructor() {\n    this.loginClick = new EventEmitter<Event>();\n    this.menuClick = new EventEmitter<Event>();\n    this.searchClick = new EventEmitter<Event>();\n  }\n\n  ngAfterViewInit() {\n    this.updateListeners();\n  }\n\n  updateListeners() {\n    //     if (!this.stickyHeader && this.headerWrapper && this.sticky) {\n    //       this.stickyHeader = new HeaderSticky(this.headerWrapper.nativeElement);\n    //     }\n  }\n\n  protected emitLoginClick(event: Event): void {\n    event.preventDefault();\n    this.loginClick.emit(event);\n  }\n\n  protected emitMenuClick(event: Event): void {\n    event.preventDefault();\n    this.menuClick.emit(event);\n  }\n\n  protected emitSearchClick(event: Event): void {\n    event.preventDefault();\n    this.searchClick.emit(event);\n  }\n\n  toggleCollapse() {\n    this.it25NavBarComponent?.toggleCollapse();\n  }\n}\n",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';\nimport { TranslateModule } from '@ngx-translate/core';\nimport { ItIconComponent } from '../../utils/icon/icon.component';\nimport { It25NavBarModule } from '../navbar/navbar.module';\nimport { It25NavBarComponent } from '../navbar/navbar/navbar.component';\n\nimport { ItButtonDirective } from '../../core/button/button.directive';\nimport { inputToBoolean } from '../../../utils/coercion';\n\n@Component({\n  standalone: true,\n  selector: 'it25-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  imports: [TranslateModule, ItIconComponent, ItButtonDirective, It25NavBarModule],\n})\nexport class It25HeaderComponent {\n  @Input({ transform: inputToBoolean }) showSearch?: boolean = true;\n\n  @Input() loginStyle: 'none' | 'default' | 'logged' = 'none';\n  @Input() menuStyle: 'none' | 'horizontal' | 'vertical' | 'sidebar' = 'horizontal';\n\n  @Output() loginClick: EventEmitter<Event>;\n  @Output() menuClick: EventEmitter<Event>;\n\n  @Output() searchClick: EventEmitter<Event>;\n\n  @ViewChild('headerWrapper') private headerWrapper?: ElementRef<HTMLButtonElement>;\n\n  @ViewChild(It25NavBarComponent) private it25NavBarComponent?: It25NavBarComponent;\n\n  @Input({ transform: inputToBoolean }) megamenu?: boolean;\n  @Input({ transform: inputToBoolean }) expand?: boolean = true;\n\n  constructor() {\n    this.loginClick = new EventEmitter<Event>();\n    this.menuClick = new EventEmitter<Event>();\n    this.searchClick = new EventEmitter<Event>();\n  }\n\n  protected emitLoginClick(event: Event): void {\n    event.preventDefault();\n    this.loginClick.emit(event);\n  }\n\n  protected emitMenuClick(event: Event): void {\n    event.preventDefault();\n    this.menuClick.emit(event);\n  }\n\n  protected emitSearchClick(event: Event): void {\n    event.preventDefault();\n    this.searchClick.emit(event);\n  }\n\n  toggleCollapse() {\n    this.it25NavBarComponent?.toggleCollapse();\n  }\n\n  toggleVertMenu() {\n    const vMenu = document.getElementById('it25-menu-vert');\n    const closeIcon = document.getElementById('menu-ver-icon-close');\n    const burgerIcon = document.getElementById('menu-ver-icon-open');\n    if (vMenu && closeIcon && burgerIcon) {\n      if (vMenu.style.display == 'block') {\n        vMenu.style.display = 'none';\n        burgerIcon.style.display = 'block';\n        closeIcon.style.display = 'none';\n      } else {\n        vMenu.style.display = 'block';\n        burgerIcon.style.display = 'none';\n        closeIcon.style.display = 'block';\n      }\n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".it-header-navbar-wrapper {\n  &.theme-light-desk {\n    &.it25-menu-orizzontale {\n      top: 28%;\n      margin-top: 0;\n      @media screen and (max-width: 991px) {\n        background: transparent;\n      }\n    }\n  }\n}\n",
+                    "data": "header {\n  &.it25-header {\n    position: sticky;\n    top: 0;\n  }\n}\n\n.it-header-navbar-wrapper {\n  &.theme-light-desk {\n    top: 22%;\n    margin-top: 0;\n    @media screen and (max-width: 991px) {\n      background: transparent;\n      left: -10px;\n    }\n  }\n}\n\n.it25-barra-ist {\n  .it-header-center-content-wrapper {\n    .it-brand-wrapper {\n      .it25-hamburger-btn-wrapper {\n        @media (max-width: 991px) {\n          margin-left: -48px;\n        }\n      }\n    }\n  }\n}\n",
                     "styleUrl": "./header.component.scss"
                 }
             ],
@@ -10265,13 +10173,10 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 44
+                "line": 34
             },
             "extends": [],
-            "implements": [
-                "AfterViewInit"
-            ],
-            "templateData": "<header #headerWrapper class=\"it-header-wrapper\" data-bs-position-type=\"fixed\" data-bs-target=\"#header-nav-wrapper\">\n  @if (showSlim) {\n    <div class=\"it-header-slim-wrapper it25-top-bar\">\n      <div class=\"container-fluid\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <div class=\"it-header-slim-wrapper-content\">\n              <a class=\"navbar-brand\" href=\"#\">\n                <img src=\"bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png\" alt=\"logo regione lombardia\" class=\"d-md-none\" />\n              </a>\n              <div class=\"it-header-slim-right-zone\">\n                <ng-content select=\"[slimRightZone]\"></ng-content>\n                @if (loginStyle === 'default') {\n                  <a class=\"btn btn-primary btn-sm btn-full\" (click)=\"emitLoginClick($event)\" href=\"#\">\n                    <it-icon name=\"user\" color=\"white\"></it-icon>\n                    {{ 'it.navigation.login' | translate }}\n                  </a>\n                }\n                @if (loginStyle === 'logged') {\n                  <ng-content select=\"[userSettings]\"></ng-content>\n                }\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  }\n  <div class=\"it-nav-wrapper\">\n    <div class=\"it-header-center-wrapper it25-barra-ist\" [class.it-small-header]=\"smallHeader\">\n      <div class=\"container-fluid\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <div class=\"it-header-center-content-wrapper\">\n              <div class=\"it-brand-wrapper\">\n                <ng-content select=\"[brand]\"></ng-content>\n              </div>\n              <div class=\"it-right-zone\">\n                <ng-content select=\"[rightZone]\"></ng-content>\n                @if (showSearch) {\n                  <form>\n                    <div class=\"it-search-wrapper\">\n                      <input\n                        id=\"search-input99\"\n                        class=\"form-control d-none d-lg-flex mr-sm-2 ml-auto\"\n                        type=\"search\"\n                        placeholder=\"Cerca...\"\n                        aria-label=\"Testo per ricerca\" />\n                      <button class=\"btn p-0 m-1\" type=\"submit\" aria-label=\"Esegui ricerca\">\n                        <svg class=\"icon\"><use xlink:href=\"bootstrap-lombardia/dist/svg/sprites.svg#it-search\"></use></svg>\n                      </button>\n                    </div>\n                  </form>\n                }\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    @if (menuStyle === 'horizontal') {\n      <div class=\"it-header-navbar-wrapper theme-light-desk it25-menu-orizzontale\" id=\"header-nav-wrapper\">\n        <div class=\"container-fluid\">\n          <div class=\"row\">\n            <div class=\"col-12\">\n              <it25-navbar [megamenu]=\"megamenu\" [expand]=\"expand\" [horizontal]=\"true\">\n                <ng-container navItems>\n                  <ng-content select=\"[navItems]\"></ng-content>\n                </ng-container>\n              </it25-navbar>\n            </div>\n          </div>\n        </div>\n      </div>\n    }\n  </div>\n  @if (menuStyle === 'vertical') {\n    <it25-navbar [megamenu]=\"megamenu\" [expand]=\"expand\" [vertical]=\"true\">\n      <ng-container navItems>\n        <ng-content select=\"[verticalNavItems]\"></ng-content>\n      </ng-container>\n    </it25-navbar>\n  }\n</header>\n"
+            "templateData": "<header #headerWrapper class=\"it25-header it-header-wrapper\" data-bs-position-type=\"fixed\" data-bs-target=\"#header-nav-wrapper\">\n  <div class=\"it-header-slim-wrapper it25-top-bar\">\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-12\">\n          <div class=\"it-header-slim-wrapper-content\">\n            <a class=\"navbar-brand\" href=\"#\">\n              <img src=\"bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png\" alt=\"logo regione lombardia\" class=\"d-md-none\" />\n            </a>\n            <div class=\"it-header-slim-right-zone\">\n              <ng-content select=\"[slimRightZone]\"></ng-content>\n              @if (loginStyle === 'default') {\n                <a class=\"btn btn-primary btn-sm btn-full\" (click)=\"emitLoginClick($event)\" href=\"#\">\n                  <it-icon name=\"user\" color=\"white\"></it-icon>\n                  {{ 'it.navigation.login' | translate }}\n                </a>\n              }\n              @if (loginStyle === 'logged') {\n                <ng-content select=\"[userSettings]\"></ng-content>\n              }\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"it-nav-wrapper\">\n    <div class=\"it-header-center-wrapper it25-barra-ist\">\n      <div class=\"container-fluid\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <div class=\"it-header-center-content-wrapper\">\n              <div class=\"it-brand-wrapper\">\n                @if (menuStyle === 'vertical') {\n                  <div class=\"it25-hamburger-btn-wrapper\">\n                    <button\n                      (click)=\"toggleVertMenu()\"\n                      #collapseButton\n                      class=\"btn btn-xs d-block\"\n                      type=\"button\"\n                      [attr.aria-label]=\"'it.navbar.aria-label-toggle' | translate\">\n                      <it-icon id=\"menu-ver-icon-open\" name=\"burger\" color=\"primary\"></it-icon>\n                      <it-icon id=\"menu-ver-icon-close\" name=\"close-big\" color=\"primary\" style=\"display: none\"></it-icon>\n                    </button>\n                  </div>\n                }\n                <ng-content select=\"[brand]\"></ng-content>\n              </div>\n              <div class=\"it-right-zone\">\n                <ng-content select=\"[rightZone]\"></ng-content>\n                @if (showSearch) {\n                  <form>\n                    <div class=\"it-search-wrapper\">\n                      <input\n                        id=\"search-input99\"\n                        class=\"form-control d-none d-lg-flex mr-sm-2 ml-auto\"\n                        type=\"search\"\n                        placeholder=\"Cerca...\"\n                        aria-label=\"Testo per ricerca\" />\n                      <button class=\"btn p-0 m-1\" type=\"submit\" aria-label=\"Esegui ricerca\">\n                        <svg class=\"icon\"><use xlink:href=\"bootstrap-lombardia/dist/svg/sprites.svg#it-search\"></use></svg>\n                      </button>\n                    </div>\n                  </form>\n                }\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    @if (menuStyle === 'horizontal') {\n      <div class=\"it-header-navbar-wrapper theme-light-desk it25-menu-orizzontale\" id=\"header-nav-wrapper\">\n        <div class=\"container-fluid\">\n          <div class=\"row\">\n            <div class=\"col-12\">\n              <it25-navbar [megamenu]=\"megamenu\" [expand]=\"expand\" [horizontal]=\"true\">\n                <ng-container navItems>\n                  <ng-content select=\"[navItems]\"></ng-content>\n                </ng-container>\n              </it25-navbar>\n            </div>\n          </div>\n        </div>\n      </div>\n    }\n    @if (menuStyle === 'sidebar') {\n      <div class=\"it-header-navbar-wrapper theme-light-desk\" id=\"header-nav-wrapper\">\n        <div class=\"container-fluid\">\n          <div class=\"row\">\n            <div class=\"col-12\">\n              <it25-navbar [megamenu]=\"megamenu\" [expand]=\"expand\">\n                <ng-container navItems>\n                  <ng-content select=\"[sidebarNavItems]\"></ng-content>\n                </ng-container>\n              </it25-navbar>\n            </div>\n          </div>\n        </div>\n      </div>\n    }\n  </div>\n\n  @if (menuStyle === 'vertical') {\n    <ng-container navItems>\n      <ng-content select=\"[verticalNavItems]\"></ng-content>\n    </ng-container>\n  }\n</header>\n"
         },
         {
             "name": "It25NavBarComponent",
@@ -10477,7 +10382,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".navbar {\n  &.horizontal {\n    padding-left: 8px !important;\n    padding-top: 6px;\n  }\n\n  &.vertical {\n    padding-left: 0;\n    padding-top: 0;\n    background-color: white;\n    button {\n      &.custom-navbar-toggler {\n        position: absolute;\n        top: -62px;\n        left: 10px;\n      }\n    }\n  }\n}\n\n//@include media-breakpoint-up(lg) {\n@media (min-width: 992px) {\n  .navbar {\n    .navbar-collapsable {\n      .menu-wrapper {\n        background-color: white;\n      }\n    }\n  }\n}\n",
+                    "data": "//@include media-breakpoint-up(lg) {\n@media (min-width: 992px) {\n  .navbar {\n    .navbar-collapsable {\n      .menu-wrapper {\n        background-color: white;\n      }\n    }\n  }\n}\n",
                     "styleUrl": "./navbar.component.scss"
                 }
             ],
@@ -10486,7 +10391,7 @@
             "implements": [
                 "AfterViewInit"
             ],
-            "templateData": "<nav\n  class=\"navbar\"\n  [class.navbar-expand-lg]=\"expand\"\n  [class.has-megamenu]=\"megamenu\"\n  [class.vertical]=\"vertical\"\n  [class.horizontal]=\"horizontal\"\n  [attr.aria-label]=\"'it.navbar.aria-label-main' | translate\">\n  <button\n    (click)=\"toggleCollapse()\"\n    #collapseButton\n    class=\"custom-navbar-toggler\"\n    type=\"button\"\n    [attr.aria-label]=\"'it.navbar.aria-label-toggle' | translate\">\n    <it-icon name=\"burger\" color=\"primary\"></it-icon>\n  </button>\n  <div #collapseView class=\"navbar-collapsable\" style=\"display: none\">\n    <div class=\"overlay\" style=\"display: none\"></div>\n    <div class=\"close-div\">\n      <button class=\"btn close-menu\" type=\"button\">\n        <span class=\"visually-hidden\">{{ 'it.navbar.hide' | translate }}</span>\n        <it-icon name=\"close-big\"></it-icon>\n      </button>\n    </div>\n    <div class=\"menu-wrapper\">\n      <ul class=\"navbar-nav\">\n        <ng-content select=\"[navItems]\"></ng-content>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+            "templateData": "<nav\n  class=\"navbar\"\n  [class.navbar-expand-lg]=\"expand\"\n  [class.has-megamenu]=\"megamenu\"\n  [class.vertical]=\"vertical\"\n  [attr.aria-label]=\"'it.navbar.aria-label-main' | translate\">\n  <button\n    (click)=\"toggleCollapse()\"\n    #collapseButton\n    class=\"custom-navbar-toggler\"\n    type=\"button\"\n    [attr.aria-label]=\"'it.navbar.aria-label-toggle' | translate\">\n    <it-icon name=\"burger\" color=\"primary\"></it-icon>\n  </button>\n  <div #collapseView class=\"navbar-collapsable\" style=\"display: none\">\n    <div class=\"overlay\" style=\"display: none\"></div>\n    <div class=\"close-div\">\n      <button class=\"btn close-menu\" type=\"button\">\n        <span class=\"visually-hidden\">{{ 'it.navbar.hide' | translate }}</span>\n        <it-icon name=\"close-big\"></it-icon>\n      </button>\n    </div>\n    <div class=\"menu-wrapper\">\n      <ul class=\"navbar-nav\">\n        <ng-content select=\"[navItems]\"></ng-content>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
         },
         {
             "name": "It25NavBarItemComponent",
@@ -43725,7 +43630,7 @@
                         "type": "string",
                         "deprecated": false,
                         "deprecationMessage": "",
-                        "destrucuredGroupId": "0667e770-5d0e-41cc-8e62-68846f65e1f5",
+                        "destrucuredGroupId": "bd40a9c5-f345-45ab-8f03-ca3885639a27",
                         "destructuredParameter": true
                     }
                 ],
@@ -43735,7 +43640,7 @@
                         "type": "string",
                         "deprecated": false,
                         "deprecationMessage": "",
-                        "destrucuredGroupId": "0667e770-5d0e-41cc-8e62-68846f65e1f5",
+                        "destrucuredGroupId": "bd40a9c5-f345-45ab-8f03-ca3885639a27",
                         "destructuredParameter": true,
                         "tagName": {
                             "text": "param"
@@ -46321,7 +46226,7 @@
                             "type": "string",
                             "deprecated": false,
                             "deprecationMessage": "",
-                            "destrucuredGroupId": "0667e770-5d0e-41cc-8e62-68846f65e1f5",
+                            "destrucuredGroupId": "bd40a9c5-f345-45ab-8f03-ca3885639a27",
                             "destructuredParameter": true
                         }
                     ],
@@ -46331,7 +46236,7 @@
                             "type": "string",
                             "deprecated": false,
                             "deprecationMessage": "",
-                            "destrucuredGroupId": "0667e770-5d0e-41cc-8e62-68846f65e1f5",
+                            "destrucuredGroupId": "bd40a9c5-f345-45ab-8f03-ca3885639a27",
                             "destructuredParameter": true,
                             "tagName": {
                                 "text": "param"
@@ -48792,9 +48697,9 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "It25FooterComponent",
-                "coveragePercent": 80,
-                "coverageCount": "4/5",
-                "status": "very-good"
+                "coveragePercent": 66,
+                "coverageCount": "2/3",
+                "status": "good"
             },
             {
                 "filePath": "projects/design-angular-kit/src/lib/components/it25/header/header.component.ts",
@@ -48802,7 +48707,7 @@
                 "linktype": "component",
                 "name": "It25HeaderComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/20",
+                "coverageCount": "0/17",
                 "status": "low"
             },
             {
