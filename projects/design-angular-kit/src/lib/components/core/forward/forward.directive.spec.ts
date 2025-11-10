@@ -10,6 +10,7 @@ import { By } from '@angular/platform-browser';
     <a href="#" [itForward]="refH3">second</a>
     <h3>Text H3</h3>
   `,
+  standalone: false,
 })
 class UnitTestComponent {
   @ViewChildren(ItForwardDirective) directives: QueryList<ItForwardDirective>;
@@ -22,6 +23,7 @@ describe('ItForwardDirective', () => {
     TestBed.configureTestingModule({
       declarations: [UnitTestComponent],
       imports: [ItForwardDirective],
+      providers: [{ provide: ItForwardDirective }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(UnitTestComponent);
@@ -30,7 +32,7 @@ describe('ItForwardDirective', () => {
   }));
 
   it('should create an instance', () => {
-    const directive = new ItForwardDirective();
+    const directive = TestBed.inject(ItForwardDirective);
     expect(directive).toBeTruthy();
   });
 

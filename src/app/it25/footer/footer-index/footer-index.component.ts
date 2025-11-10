@@ -4,6 +4,7 @@ import Documentation from '../../../../assets/documentation.json';
 @Component({
   selector: 'it-footer-index',
   templateUrl: './footer-index.component.html',
+  standalone: false,
 })
 export class FooterIndexComponent {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

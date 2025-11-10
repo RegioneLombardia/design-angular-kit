@@ -4,13 +4,14 @@ import { NavscrollItems } from 'projects/design-angular-kit/src/public_api';
 @Component({
   selector: 'it-navscroll-default-example',
   templateUrl: './navscroll-default-example.component.html',
+  standalone: false,
 })
 export class NavscrollDefaultExampleComponent {
   readonly header = 'Default example';
   readonly items = [
     {
       title: 'Prima Sezione',
-      text: 'Testo prima sezione',
+      html: '<b>Testo prima sezione</b>',
       href: '#',
       childs: [
         {

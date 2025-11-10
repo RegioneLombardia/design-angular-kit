@@ -54,9 +54,15 @@
               <span button>{{ item.label }}</span>
               <ng-container list>
                 @for (link of item.links; track link.label) {
-                  <it-dropdown-item [externalLink]="false" [href]="link.link" (click)="headerEl.closeNavBar()">{{
-                    link.label
-                  }}</it-dropdown-item>
+                  <li
+                    itDropdownItem
+                    [externalLink]="false"
+                    [href]="link.link"
+                    (click)="headerEl.closeNavBar()"
+                    (keypress)="headerEl.closeNavBar()"
+                    tabindex="0">
+                    {{ link.label }}
+                  </li>
                 }
               </ng-container>
             </it-dropdown>

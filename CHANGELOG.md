@@ -1,3 +1,67 @@
+
+
+# Merge 1.5.0 -> 20.1.0 desidgn-angular-kit italia - INIZIO
+---
+
+
+# [20.1.0](https://github.com/italia/design-angular-kit/compare/v20.0.0...v20.1.0) (2025-09-17)
+
+
+### Bug Fixes
+
+* custom label for upload button ([393bab7](https://github.com/italia/design-angular-kit/commit/393bab780a3e40d86667a9394d8e6331b1d55365))
+
+
+### Features
+
+* new cards ([6f43538](https://github.com/italia/design-angular-kit/commit/6f435382de44e1901e1eb72a67e5380f9ed53ad3))
+
+
+
+# [20.0.0](https://github.com/italia/design-angular-kit/compare/v1.6.1...v20.0.0) (2025-06-24)
+
+
+### Bug Fixes
+
+* navscroll, navbar, header and dropdown improvements ([e2d1fe2](https://github.com/italia/design-angular-kit/commit/e2d1fe26201122424682894c4829687d29bef5f8))
+
+
+### Features
+
+* **navbar:** add html support to navbar items ([7bdc2a1](https://github.com/italia/design-angular-kit/commit/7bdc2a1c826d5269157b3b28b750df76678fb695))
+
+
+
+## [1.6.1](https://github.com/italia/design-angular-kit/compare/v1.6.0...v1.6.1) (2025-06-18)
+
+
+### Bug Fixes
+
+* package dependencies ([1f59a71](https://github.com/italia/design-angular-kit/commit/1f59a71fb7408de57008a8ed12f7bf3ae7e58043))
+
+
+
+# [1.6.0](https://github.com/italia/design-angular-kit/compare/v1.5.0...v1.6.0) (2025-06-16)
+
+
+### Features
+
+* add angular 20 support ([8008867](https://github.com/italia/design-angular-kit/commit/80088677f618ad5e05675ef5dfab34c15a10bc6c))
+
+
+
+# [1.5.0](https://github.com/italia/design-angular-kit/compare/v1.4.0...v1.5.0) (2025-06-11)
+
+
+### Features
+
+* add support to angular 19 ([0460a78](https://github.com/italia/design-angular-kit/commit/0460a781460630690b5b0aeb8ccabf7bbb9017f6))
+
+---
+# Merge 1.5.0 -> 20.1.0 desidgn-angular-kit italia - FINE
+
+
+
 # [1.0.0-beta](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-alpha.3...v1.0.0-beta) (2025-08-21)
 
 

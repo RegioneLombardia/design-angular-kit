@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ItNotificationService } from 'design-angular-kit/services/notification/notification.service';
 
 @Component({
   selector: 'it-notifications-example-type',
   templateUrl: './notifications-example-type.component.html',
+  standalone: false,
 })
 export class NotificationsExampleTypeComponent {
-  private text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...';
+  private readonly notificationService = inject(ItNotificationService);
 
-  constructor(private readonly notificationService: ItNotificationService) {}
+  private text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...';
 
   standardNotification(): void {
     this.notificationService.standard('Notifica Standard', this.text);

@@ -9,6 +9,7 @@ import {
   OnDestroy,
   Output,
   QueryList,
+  inject,
 } from '@angular/core';
 import { ItSteppersItemComponent } from '../steppers-item/steppers-item.component';
 import { ProgressBarColor } from '../../../../interfaces/core';
@@ -22,13 +23,20 @@ import { ItProgressButtonComponent } from '../../progress-button/progress-button
 import { inputToBoolean } from '../../../../utils/coercion';
 
 @Component({
-  standalone: true,
   selector: 'it-steppers-container',
   templateUrl: './steppers-container.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [ItIconComponent, NgTemplateOutlet, TranslateModule, ItButtonDirective, ItProgressBarComponent, ItProgressButtonComponent],
 })
 export class ItSteppersContainerComponent implements AfterViewInit, OnDestroy {
+  private readonly _changeDetectorRef = inject(ChangeDetectorRef);
+
+  /**
+   * The confirmed label if different from default
+   * @default null
+   */
+  @Input() confirmedLabel: string | null = null;
+
   /**
    * The active step index
    * @param index the step index
@@ -155,7 +163,7 @@ export class ItSteppersContainerComponent implements AfterViewInit, OnDestroy {
 
   private stepsSubscriptions?: Array<Subscription>;
 
-  constructor(private readonly _changeDetectorRef: ChangeDetectorRef) {
+  constructor() {
     this.backClick = new EventEmitter<number>();
     this.forwardClick = new EventEmitter<number>();
     this.confirmClick = new EventEmitter<number>();

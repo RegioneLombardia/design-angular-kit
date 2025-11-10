@@ -6,6 +6,7 @@ import TableOfContent from '../../assets/table-of-content.json';
   selector: 'it-router-dispatcher',
   templateUrl: './router-dispatcher.component.html',
   styleUrls: ['./router-dispatcher.component.scss'],
+  standalone: false,
 })
 export class RouterDispatcherComponent {
   tableOfContent = (<any>TableOfContent).tableOfContent;

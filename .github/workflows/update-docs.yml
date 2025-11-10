@@ -2,7 +2,7 @@ name: Update documentation
 
 on:
   workflow_run:
-    workflows: ["Publish release"]
+    workflows: ["Generate new release"]
     branches:
       - main
     types:

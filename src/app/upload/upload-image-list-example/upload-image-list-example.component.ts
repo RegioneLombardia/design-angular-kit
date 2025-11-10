@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { UploadFileListItem } from 'design-angular-kit/interfaces/form';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin } from 'rxjs';
@@ -6,11 +6,12 @@ import { forkJoin } from 'rxjs';
 @Component({
   selector: 'it-upload-image-list-example',
   templateUrl: './upload-image-list-example.component.html',
+  standalone: false,
 })
 export class UploadImageListExampleComponent implements OnInit {
-  uploadedImageList: Array<UploadFileListItem> = [];
+  private readonly httpClient = inject(HttpClient);
 
-  constructor(private readonly httpClient: HttpClient) {}
+  uploadedImageList: Array<UploadFileListItem> = [];
 
   ngOnInit() {
     const images$ = [

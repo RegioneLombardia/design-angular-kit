@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'it-password-input-validation-example',
   templateUrl: './password-input-validation-example.component.html',
+  standalone: false,
 })
 export class PasswordInputValidationExampleComponent {
+  private readonly formBuilder = inject(FormBuilder);
+
   formGroup: FormGroup;
 
-  constructor(private readonly formBuilder: FormBuilder) {
+  constructor() {
     this.formGroup = this.formBuilder.group({
       password: [null],
       passwordCustom: [null],
