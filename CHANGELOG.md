@@ -1,4 +1,8 @@
+# [1.0.0-rc.1](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-beta...v1.0.0-rc.1) (2025-11-11)
 
+### Features
+
+* allineamento alla versione 20.1.0 di design-angular-kit italia
 
 # Merge 1.5.0 -> 20.1.0 design-angular-kit italia - INIZIO
 ---
