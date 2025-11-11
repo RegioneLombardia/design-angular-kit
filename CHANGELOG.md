@@ -1,6 +1,6 @@
 
 
-# Merge 1.5.0 -> 20.1.0 desidgn-angular-kit italia - INIZIO
+# Merge 1.5.0 -> 20.1.0 design-angular-kit italia - INIZIO
 ---
 
 
@@ -58,7 +58,7 @@
 * add support to angular 19 ([0460a78](https://github.com/italia/design-angular-kit/commit/0460a781460630690b5b0aeb8ccabf7bbb9017f6))
 
 ---
-# Merge 1.5.0 -> 20.1.0 desidgn-angular-kit italia - FINE
+# Merge 1.5.0 -> 20.1.0 design-angular-kit italia - FINE
 
 
 
