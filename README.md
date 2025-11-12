@@ -46,9 +46,6 @@ Design Angular Kit Lombardia è disponibile su NPM, per installarlo su una appli
 npm install design-angular-kit-lombardia --save
 ```
 
-Attualmente è allineata alla versione 1.4.0 del Design Angular kit Italia, quindi utilizza la versione 18 di Angular.  
-Prima del rilascio della versione 1.0.0 effettiva, verrà allineata alla versione del Design Angular kit Italia più recente (al momento la 1.6.0 basata su Angular 20), purchè venga dichiarata "stabile".
-
 ## Configurazione
 Per la configurazione si veda la [configurazione](https://github.com/italia/design-angular-kit?tab=readme-ov-file#configurazione) del Design Angular kit Italia.  
 Naturalmente **sostituendo** di volta in volta le voci:
