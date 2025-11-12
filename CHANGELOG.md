@@ -1,3 +1,7 @@
+# [1.0.0](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-rc.1...v1.0.0) (2025-11-12)
+
+* Rilascio prima release ufficiale
+
 
 # Merge 20.2.0 design-angular-kit italia - INIZIO
 ---
