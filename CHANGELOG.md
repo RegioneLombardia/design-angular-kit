@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0...v1.0.1) (2025-11-27)
+
+
+### Features
+
+* upgrade bootstrap-lombardia ([8e73904](https://github.com/RegioneLombardia/design-angular-kit/commit/8e739045304fbeb91455e1ffc6ecedb2c8764dbc))
+
+
+
 # [1.0.0](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.0-rc.1...v1.0.0) (2025-11-12)
 
 * Rilascio prima release ufficiale
