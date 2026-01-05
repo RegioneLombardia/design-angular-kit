@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/RegioneLombardia/design-angular-kit/compare/v1.0.1...v1.0.2) (2026-01-05)
+
+
+* allineamento a versione 20.2.1 di design-angular-kit italia
+* upgrade bootstrap-lombardia 2.6.3
+
 
 # Merge 20.2.1 design-angular-kit italia - INIZIO
 ---
